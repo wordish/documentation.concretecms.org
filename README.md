@@ -1,4 +1,4 @@
-# training.concretecms.com
+# documentation.concretecms.com
 
 This repo contains the code for documentation at concretecms.org.
 
