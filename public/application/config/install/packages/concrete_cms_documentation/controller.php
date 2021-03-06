@@ -1,5 +1,5 @@
 <?php
-namespace Application\StartingPointPackage\ConcreteCmsTraining;
+namespace Application\StartingPointPackage\ConcreteCmsDocumentation;
 
 use Concrete\Core\Application\Application;
 use Concrete\Core\Backup\ContentImporter;
@@ -9,16 +9,16 @@ use Concrete\Core\Package\StartingPointPackage;
 
 class Controller extends StartingPointPackage
 {
-    protected $pkgHandle = 'concrete_cms_training';
+    protected $pkgHandle = 'concrete_cms_documentation';
 
     public function getPackageName()
     {
-        return t('training.concretecms.com');
+        return t('documentation.concretecms.org');
     }
 
     public function getPackageDescription()
     {
-        return 'Installs the training.concretecms.com starting point.';
+        return 'Installs the documentation.concretecms.org starting point.';
     }
     
 }

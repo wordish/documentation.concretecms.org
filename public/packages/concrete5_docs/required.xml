@@ -3,6 +3,9 @@
     <jobs>
         <job handle="refresh_page_relations" package="concrete5_docs"/>
     </jobs>
+    <themes>
+        <theme handle="concrete_cms" package="concrete_cms_theme" activated="1"/>
+    </themes>
     <attributekeys>
         <attributekey handle="audience" name="Audience" package="" searchable="1" indexed="1" type="select"
                       category="collection">

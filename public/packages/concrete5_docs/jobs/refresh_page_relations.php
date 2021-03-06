@@ -1,13 +1,13 @@
 <?php
 namespace Concrete\Package\Concrete5Docs\Job;
 
+use Concrete\Core\Job\JobQueue;
+use Concrete\Core\Job\JobQueueMessage;
 use Concrete\Core\Page\Type\Type;
 use Concrete\Package\Concrete5Docs\Page\Relater;
 use Loader;
 use Concrete\Core\Job\QueueableJob;
 use Concrete\Core\Page\Page;
-use \ZendQueue\Queue as ZendQueue;
-use \ZendQueue\Message as ZendQueueMessage;
 
 class RefreshPageRelations extends QueueableJob
 {
@@ -28,7 +28,7 @@ class RefreshPageRelations extends QueueableJob
     }
 
 
-    public function start(ZendQueue $q)
+    public function start(JobQueue $q)
     {
         $db = Loader::db();
         $documentation = Type::getByHandle('document');
@@ -42,7 +42,7 @@ class RefreshPageRelations extends QueueableJob
         }
     }
 
-    public function finish(ZendQueue $q)
+    public function finish(JobQueue $q)
     {
         $db = Loader::db();
         $query = $db->getEntityManager()->createQuery("SELECT COUNT(r) FROM \PortlandLabs\Concrete5\Documentation\Entity\RelatedPage r");
@@ -50,7 +50,7 @@ class RefreshPageRelations extends QueueableJob
         return t('Index updated. %s pages related.', $total);
     }
 
-    public function processQueueItem(ZendQueueMessage $msg)
+    public function processQueueItem(JobQueueMessage $msg)
     {
         $c = Page::getByID($msg->body, 'ACTIVE');
         $manager = \Database::connection()->getEntityManager();

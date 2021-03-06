@@ -395,9 +395,6 @@
             </area>
         </page>
     </pages>
-    <themes>
-        <theme handle="concrete5" package="concrete5_theme" activated="1"/>
-    </themes>
     <singlepages>
         <page name="My Contributions" path="/contributions" filename="/contributions/view.php" pagetype="" user="admin"
               description="" package="concrete5_docs">

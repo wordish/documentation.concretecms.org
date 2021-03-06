@@ -2,10 +2,10 @@
 <concrete5-cif version="1.0">
 
     <packages>
+        <package handle="markdown" />
+        <package handle="likes_this_block" />
         <package handle="concrete_cms_theme"/>
         <package handle="concrete5_docs" />
-        <package handle="likes_this_block" />
-        <package handle="markdown" />
     </packages>
 
 </concrete5-cif>
