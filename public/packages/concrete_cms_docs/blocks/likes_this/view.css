@@ -1,0 +1,18 @@
+.ccm-block-likes-this-wrapper p {
+    display: block;
+    float: left;
+    margin: 5px 15px 5px 0;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.ccm-block-likes-this-wrapper a {
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 22px;
+    margin: 5px;
+}

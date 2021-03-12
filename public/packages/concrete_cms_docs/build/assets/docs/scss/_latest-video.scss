@@ -1,0 +1,35 @@
+/**
+ * @project:   ConcreteCMS Docs
+ *
+ * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+ * @author     Fabian Bitter (fabian@bitter.de)
+ */
+
+.latest-video {
+  & > a {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & > h4 {
+    a {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
