@@ -23,37 +23,79 @@ $token = $app->make(Token::class);
 $site = $app->make('site')->getActiveSiteForEditing();
 /** @var Repository $siteConfig */
 $siteConfig = $site->getConfigRepository();
-
+$c = Page::getCurrentPage();
+$user = new User();
 ?>
 
 <ul class="nav navbar-nav navbar-right">
     <li class="nav-item index-1">
-        <a href="<?php echo (string)Url::to("/user-guide"); ?>" target="_self" class="nav-link">
-            <?php echo t("User Guide"); ?>
+        <a href="<?php echo (string)Url::to("/about"); ?>" target="_self" class="nav-link">
+            <?php echo t("About"); ?>
         </a>
     </li>
 
     <li class="nav-item index-2">
-        <a href="<?php echo (string)Url::to("/developers"); ?>" target="_self" class="nav-link">
-            <?php echo t("Developers"); ?>
+        <a href="<?php echo (string)Url::to("/get-started"); ?>" target="_self" class="nav-link">
+            <?php echo t("Get Started"); ?>
         </a>
     </li>
 
     <li class="nav-item index-3">
-        <a href="<?php echo (string)Url::to("/tutorials"); ?>" target="_self" class="nav-link">
-            <?php echo t("Tutorials"); ?>
+        <a href="<?php echo (string)Url::to("/extensions"); ?>" target="_self" class="nav-link">
+            <?php echo t("Extensions"); ?>
         </a>
     </li>
 
-    <li class="nav-item index-4">
-        <a href="<?php echo (string)Url::to("/videos"); ?>" target="_self" class="nav-link">
-            <?php echo t("Videos"); ?>
+    <li class="nav-item dropdown index-4 active">
+        <a href="<?php echo (string)Url::to("/"); ?>" target="_self"
+           class="nav-link  dropdown-toggle" data-toggle="dropdown">
+            <?php echo t("Support"); ?> <span class="caret"></span>
         </a>
+
+        <ul class="dropdown-menu">
+            <li class="nav-item <?php echo strpos($c->getCollectionPath(), "/user-guide") !== false ? "active" : "";?>">
+                <a href="<?php echo (string)Url::to("/user-guide");?>" class="nav-link ">
+                    <?php echo t("User Guide"); ?>
+                </a>
+            </li>
+
+            <li class="nav-item <?php echo strpos($c->getCollectionPath(), "/developers") !== false ? "active" : "";?>">
+                <a href="<?php echo (string)Url::to("/developers");?>" class="nav-link ">
+                    <?php echo t("Developers"); ?>
+                </a>
+            </li>
+
+            <li class="nav-item <?php echo strpos($c->getCollectionPath(), "/videos") !== false ? "active" : "";?>">
+                <a href="<?php echo (string)Url::to("/videos");?>" class="nav-link ">
+                    <?php echo t("Videos"); ?>
+                </a>
+            </li>
+
+            <li class="nav-item <?php echo strpos($c->getCollectionPath(), "/tutorials") !== false ? "active" : "";?>">
+                <a href="<?php echo (string)Url::to("/tutorials");?>" class="nav-link ">
+                    <?php echo t("Tutorials"); ?>
+                </a>
+            </li>
+
+            <li class="nav-item <?php echo strpos($c->getCollectionPath(), "/contribute") !== false ? "active" : "";?>">
+                <a href="<?php echo (string)Url::to("/contribute");?>" class="nav-link ">
+                    <?php echo t("Contribute"); ?>
+                </a>
+            </li>
+
+            <?php if ($user->isRegistered()) { ?>
+                <li class="nav-item <?php echo strpos($c->getCollectionPath(), "/contributions") !== false ? "active" : "";?>">
+                    <a href="<?php echo (string)Url::to("/contributions");?>" class="nav-link ">
+                        <?php echo t("Your Contributions"); ?>
+                    </a>
+                </li>
+            <?php } ?>
+        </ul>
     </li>
 
     <li class="nav-item index-5">
-        <a href="<?php echo (string)Url::to("/contribute"); ?>" target="_self" class="nav-link">
-            <?php echo t("Contribute"); ?>
+        <a href="<?php echo (string)Url::to("/community"); ?>" target="_self" class="nav-link">
+            <?php echo t("Community"); ?>
         </a>
     </li>
 
