@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../application/.idea/application.iml" filepath="$PROJECT_DIR$/../../application/.idea/application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/concrete_cms_docs.iml" filepath="$PROJECT_DIR$/.idea/concrete_cms_docs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../concrete5/core/9.0.0/packages/concrete_cms_theme/.idea/concrete_cms_theme.iml" filepath="$PROJECT_DIR$/../../../../concrete5/core/9.0.0/packages/concrete_cms_theme/.idea/concrete_cms_theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../vendor/aembler/addon_markdown/packages/markdown/.idea/markdown.iml" filepath="$PROJECT_DIR$/../../../vendor/aembler/addon_markdown/packages/markdown/.idea/markdown.iml" />
+    </modules>
+  </component>
+</project>

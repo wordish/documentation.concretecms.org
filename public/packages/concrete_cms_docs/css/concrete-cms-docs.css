@@ -1,0 +1,569 @@
+@charset "UTF-8";
+
+/**
+ * @project:   ConcreteCMS Docs
+ *
+ * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+ * @author     Fabian Bitter (fabian@bitter.de)
+ */
+
+.ccm-page {
+  /**
+   * @project:   ConcreteCMS Docs
+   *
+   * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+   * @author     Fabian Bitter (fabian@bitter.de)
+   */
+  /**
+   * @project:   ConcreteCMS Docs
+   *
+   * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+   * @author     Fabian Bitter (fabian@bitter.de)
+   */
+  /**
+   * @project:   ConcreteCMS Docs
+   *
+   * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+   * @author     Fabian Bitter (fabian@bitter.de)
+   */
+  /**
+   * @project:   ConcreteCMS Docs
+   *
+   * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+   * @author     Fabian Bitter (fabian@bitter.de)
+   */
+  /**
+   * @project:   ConcreteCMS Docs
+   *
+   * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+   * @author     Fabian Bitter (fabian@bitter.de)
+   */
+  /**
+   * @project:   ConcreteCMS Docs
+   *
+   * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+   * @author     Fabian Bitter (fabian@bitter.de)
+   */
+  /**
+   * @project:   ConcreteCMS Docs
+   *
+   * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+   * @author     Fabian Bitter (fabian@bitter.de)
+   */
+  /**
+   * @project:   ConcreteCMS Docs
+   *
+   * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+   * @author     Fabian Bitter (fabian@bitter.de)
+   */
+  /**
+   * @project:   ConcreteCMS Docs
+   *
+   * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+   * @author     Fabian Bitter (fabian@bitter.de)
+   */
+  /*
+
+  Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+
+  */
+  /* Base color: saturation 0; */
+  /* User color: hue: 0 */
+  /* Language color: hue: 90; */
+  /* Meta color: hue: 200 */
+  /* Misc effects */
+}
+
+@media (max-width: 576px) {
+  .ccm-page .col-12 .col-1 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-2 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-3 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-5 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-7 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-8 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-9 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-10 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-11 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ccm-page .col-12 .col-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.ccm-page .tutorials .col-md-6 p {
+  margin-top: 15px;
+  font-size: 24px;
+  line-height: 34px;
+  color: #19191A;
+  font-weight: 400;
+}
+
+.ccm-page .tutorials .col-md-6 .dropdown-toggle {
+  font-size: 16px;
+  color: #1A1A1A;
+  line-height: 24px;
+  margin-right: 35px;
+}
+
+.ccm-page .tutorials .nav-tabs {
+  margin-top: 40px;
+}
+
+.ccm-page .tutorials .table .tutorial:not(.ccm-page .tutorials .table .tutorial:last-child) {
+  border-bottom: 1px solid #DFDEDE;
+}
+
+.ccm-page .tutorials .table .tutorial .page-name {
+  font-size: 22px;
+  line-height: 38px;
+  color: #1A1A1A;
+}
+
+.ccm-page .tutorials .table .tutorial .page-author {
+  color: #1A1A1A;
+  font-size: 16px;
+}
+
+.ccm-page .tutorials .table .tutorial .timestamp,
+.ccm-page .tutorials .table .tutorial .total-comments,
+.ccm-page .tutorials .table .tutorial .total-likes {
+  color: #999999;
+  font-size: 16px;
+  display: block;
+  float: left;
+  margin-left: 15px;
+}
+
+.ccm-page .tutorials .table .tutorial .timestamp {
+  margin-right: 25px;
+}
+
+.ccm-page .tutorial-search-form .bootstrap-select {
+  display: block !important;
+  float: right !important;
+  width: 50% !important;
+  margin-bottom: 15px !important;
+}
+
+.ccm-page .tutorial-search-form .bootstrap-select .filter-option-inner-inner {
+  text-overflow: ellipsis;
+  width: calc(100% - 16px);
+}
+
+.ccm-page .tutorial-search-form .bootstrap-select .filter-option-inner-inner::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  content: "\F002";
+  font-family: "Font Awesome 5 Free";
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  position: absolute;
+  right: 7px;
+  top: 9px;
+  color: #19191A;
+}
+
+.ccm-page.page-type-tutorial .ccm-tutorial-title {
+  display: block;
+  border-bottom: 1px solid #DFDEDE;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.ccm-page.page-type-tutorial .ccm-tutorial-title .page-date,
+.ccm-page.page-type-tutorial .ccm-tutorial-title .page-author,
+.ccm-page.page-type-tutorial .ccm-tutorial-title .total-comments,
+.ccm-page.page-type-tutorial .ccm-tutorial-title .total-likes,
+.ccm-page.page-type-tutorial .ccm-tutorial-title .edit-page {
+  color: #64646A;
+  font-size: 16px;
+  margin-right: 15px;
+  line-height: 24px;
+  display: block;
+  float: left;
+}
+
+.ccm-page.page-type-tutorial .ccm-tutorial-title .page-author a,
+.ccm-page.page-type-tutorial .ccm-tutorial-title .edit-page a {
+  font-weight: bold;
+}
+
+.ccm-page.page-type-tutorial .ccm-block-tags-wrapper {
+  margin-bottom: 35px;
+}
+
+.ccm-page.page-type-tutorial .ccm-block-tags-wrapper .ccm-block-tags-tag {
+  background-color: #958F8F;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.ccm-page.page-type-tutorial .recent-tutorials h5,
+.ccm-page.page-type-tutorial .ccm-block-tags-header h5 {
+  display: block;
+  border-bottom: 1px solid #DFDEDE;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.ccm-page.page-type-tutorial .recent-tutorials .recent-tutorial .recent-tutorial-page-name {
+  font-size: 18px;
+  line-height: 28px;
+  display: block;
+  float: left;
+  width: 100%;
+  font-weight: bold;
+}
+
+.ccm-page.page-type-tutorial .recent-tutorials .recent-tutorial .recent-tutorial-date,
+.ccm-page.page-type-tutorial .recent-tutorials .recent-tutorial .recent-tutorial-author {
+  font-size: 14px;
+  margin-right: 15px;
+  color: #64646A;
+  display: block;
+  float: left;
+}
+
+.ccm-page.page-type-tutorial .recent-tutorials .recent-tutorial .recent-tutorial-description {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.ccm-page.page-type-tutorial .col-content > .container {
+  padding: 0 !important;
+}
+
+.ccm-page #ccm-block-markdown-editor {
+  border-radius: 0 !important;
+}
+
+.ccm-page #ccm-block-markdown-editor .md-toolbar {
+  border-radius: 0 !important;
+  background-color: #f8f8f8 !important;
+}
+
+.ccm-page #ccm-block-markdown-editor .btn {
+  visibility: inherit !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  margin: 0 !important;
+  background: transparent !important;
+  text-decoration: none !important;
+  vertical-align: baseline !important;
+  text-align: center !important;
+  box-sizing: content-box !important;
+  transition: none !important;
+  border-collapse: collapse !important;
+  color: #000 !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  height: 18px !important;
+  min-width: 16px !important;
+  padding: 4px 6px !important;
+  outline: 0 !important;
+  cursor: default !important;
+  float: left !important;
+  border: 0 !important;
+  position: relative !important;
+  border-radius: 0 !important;
+  font: normal normal normal 12px Arial, Helvetica, Tahoma, Verdana, Sans-Serif !important;
+  font-weight: 900 !important;
+}
+
+.ccm-page #ccm-block-markdown-editor .btn[data-btn=fullscreen] {
+  display: none !important;
+}
+
+.ccm-page #ccm-block-markdown-editor .btn[data-btn=preview],
+.ccm-page #ccm-block-markdown-editor .btn[data-btn=edit] {
+  font-weight: normal !important;
+}
+
+.ccm-page #ccm-block-markdown-editor .btn:hover,
+.ccm-page #ccm-block-markdown-editor .btn:active {
+  background: #e5e5e5 !important;
+  border: 1px #bcbcbc solid !important;
+  padding: 3px 5px !important;
+}
+
+.ccm-page #ccm-block-markdown-editor .ace_content {
+  padding-top: 5px;
+}
+
+.ccm-page #ccm-block-markdown-editor .md-preview {
+  background-color: #ffffff !important;
+}
+
+.ccm-page .latest-video > a {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.ccm-page .latest-video > a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ccm-page .latest-video > h4 a {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ccm-page .latest-video > h4 span {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ccm-page .video-list .video > a {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.ccm-page .video-list .video > a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ccm-page .video-list .video > p a {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+}
+
+.ccm-page .video-list .video > p span {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ccm-page .ccm-ui .form-control {
+  border-radius: 0;
+  border-width: 1px;
+}
+
+.ccm-page.page-type-developer-document .ccm-docs-title,
+.ccm-page.page-type-editor-document .ccm-docs-title {
+  display: block;
+  border-bottom: 1px solid #DFDEDE;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.ccm-page.page-type-developer-document .ccm-docs-title .page-date,
+.ccm-page.page-type-developer-document .ccm-docs-title .page-author,
+.ccm-page.page-type-developer-document .ccm-docs-title .total-comments,
+.ccm-page.page-type-developer-document .ccm-docs-title .total-likes,
+.ccm-page.page-type-developer-document .ccm-docs-title .edit-page,
+.ccm-page.page-type-editor-document .ccm-docs-title .page-date,
+.ccm-page.page-type-editor-document .ccm-docs-title .page-author,
+.ccm-page.page-type-editor-document .ccm-docs-title .total-comments,
+.ccm-page.page-type-editor-document .ccm-docs-title .total-likes,
+.ccm-page.page-type-editor-document .ccm-docs-title .edit-page {
+  color: #64646A;
+  font-size: 16px;
+  margin-right: 15px;
+  line-height: 24px;
+  display: block;
+  float: left;
+}
+
+.ccm-page.page-type-developer-document .ccm-docs-title .page-author a,
+.ccm-page.page-type-developer-document .ccm-docs-title .edit-page a,
+.ccm-page.page-type-editor-document .ccm-docs-title .page-author a,
+.ccm-page.page-type-editor-document .ccm-docs-title .edit-page a {
+  font-weight: bold;
+}
+
+.ccm-page.page-type-developer-document .col-content > .container,
+.ccm-page.page-type-editor-document .col-content > .container {
+  padding: 0 !important;
+}
+
+.ccm-page.page-type-developer-document .col-sidebar .nav,
+.ccm-page.page-type-editor-document .col-sidebar .nav {
+  margin: 0;
+  padding: 0;
+}
+
+.ccm-page.page-type-developer-document .col-sidebar .nav > li > a,
+.ccm-page.page-type-editor-document .col-sidebar .nav > li > a {
+  font-weight: bold;
+}
+
+.ccm-page.page-type-developer-document .col-sidebar .nav li,
+.ccm-page.page-type-editor-document .col-sidebar .nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.ccm-page.page-type-developer-document .col-sidebar .nav li a,
+.ccm-page.page-type-editor-document .col-sidebar .nav li a {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.ccm-page.page-type-developer-document .col-sidebar .nav li a.nav-selected,
+.ccm-page.page-type-developer-document .col-sidebar .nav li a:active,
+.ccm-page.page-type-developer-document .col-sidebar .nav li a:hover,
+.ccm-page.page-type-editor-document .col-sidebar .nav li a.nav-selected,
+.ccm-page.page-type-editor-document .col-sidebar .nav li a:active,
+.ccm-page.page-type-editor-document .col-sidebar .nav li a:hover {
+  color: #373737 !important;
+  font-weight: bold !important;
+}
+
+.ccm-page.page-type-developer-document .col-sidebar .nav li ul,
+.ccm-page.page-type-editor-document .col-sidebar .nav li ul {
+  padding: 0;
+  margin: 0 0 0 25px;
+}
+
+.ccm-page .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #F0F0F0;
+}
+
+.ccm-page .hljs,
+.ccm-page .hljs-subst {
+  color: #444;
+}
+
+.ccm-page .hljs-comment {
+  color: #888888;
+}
+
+.ccm-page .hljs-keyword,
+.ccm-page .hljs-attribute,
+.ccm-page .hljs-selector-tag,
+.ccm-page .hljs-meta-keyword,
+.ccm-page .hljs-doctag,
+.ccm-page .hljs-name {
+  font-weight: bold;
+}
+
+.ccm-page .hljs-type,
+.ccm-page .hljs-string,
+.ccm-page .hljs-number,
+.ccm-page .hljs-selector-id,
+.ccm-page .hljs-selector-class,
+.ccm-page .hljs-quote,
+.ccm-page .hljs-template-tag,
+.ccm-page .hljs-deletion {
+  color: #880000;
+}
+
+.ccm-page .hljs-title,
+.ccm-page .hljs-section {
+  color: #880000;
+  font-weight: bold;
+}
+
+.ccm-page .hljs-regexp,
+.ccm-page .hljs-symbol,
+.ccm-page .hljs-variable,
+.ccm-page .hljs-template-variable,
+.ccm-page .hljs-link,
+.ccm-page .hljs-selector-attr,
+.ccm-page .hljs-selector-pseudo {
+  color: #BC6060;
+}
+
+.ccm-page .hljs-literal {
+  color: #78A960;
+}
+
+.ccm-page .hljs-built_in,
+.ccm-page .hljs-bullet,
+.ccm-page .hljs-code,
+.ccm-page .hljs-addition {
+  color: #397300;
+}
+
+.ccm-page .hljs-meta {
+  color: #1f7199;
+}
+
+.ccm-page .hljs-meta-string {
+  color: #4d99bf;
+}
+
+.ccm-page .hljs-emphasis {
+  font-style: italic;
+}
+
+.ccm-page .hljs-strong {
+  font-weight: bold;
+}
+

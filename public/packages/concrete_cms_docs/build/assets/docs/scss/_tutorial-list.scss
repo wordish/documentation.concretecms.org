@@ -1,0 +1,76 @@
+/**
+ * @project:   ConcreteCMS Docs
+ *
+ * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+ * @author     Fabian Bitter (fabian@bitter.de)
+ */
+
+.tutorials {
+
+  .col-md-6 {
+    h1 {
+
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 24px;
+      line-height: 34px;
+      color: #19191A;
+      font-weight: 400;
+    }
+
+    .dropdown-toggle {
+      font-size: 16px;
+      color: #1A1A1A;
+      line-height: 24px;
+      margin-right: 35px;
+    }
+  }
+
+  .nav-tabs {
+    margin-top: 40px;
+  }
+
+  .table {
+    .tutorial {
+
+      &:not(&:last-child) {
+        border-bottom: 1px solid #DFDEDE;
+      }
+
+      .page-name {
+        font-size: 22px;
+        line-height: 38px;
+        color: #1A1A1A;
+      }
+
+      .page-author {
+        color: #1A1A1A;
+        font-size: 16px;
+      }
+
+      .timestamp,
+      .total-comments,
+      .total-likes {
+        color: #999999;
+        font-size: 16px;
+        display: block;
+        float: left;
+        margin-left: 15px;
+      }
+
+      .timestamp {
+        margin-right: 25px;
+      }
+
+      .total-comments {
+
+      }
+
+      .total-likes {
+
+      }
+    }
+  }
+}

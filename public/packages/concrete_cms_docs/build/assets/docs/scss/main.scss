@@ -1,0 +1,19 @@
+/**
+ * @project:   ConcreteCMS Docs
+ *
+ * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+ * @author     Fabian Bitter (fabian@bitter.de)
+ */
+
+.ccm-page {
+  @import "general";
+  @import "tutorial-list";
+  @import "tutorial-search";
+  @import "tutorial-page";
+  @import "markdown-editor";
+  @import "latest-video";
+  @import "video-list";
+  @import "composer-form";
+  @import "docs-page";
+  @import "~highlight.js/scss/default";
+}

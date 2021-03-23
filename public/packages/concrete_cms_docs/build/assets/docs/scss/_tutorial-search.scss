@@ -1,0 +1,39 @@
+/**
+ * @project:   ConcreteCMS Docs
+ *
+ * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
+ * @author     Fabian Bitter (fabian@bitter.de)
+ */
+
+.tutorial-search-form {
+  .bootstrap-select {
+    display: block !important;
+    float: right !important;
+    width: 50% !important;
+    margin-bottom: 15px !important;
+
+    .filter-option-inner-inner {
+      text-overflow: ellipsis;
+      width: calc(100% - 16px);
+
+      &::after {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 900;
+        content: "\f002";
+        font-family: "Font Awesome\ 5 Free";
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+        position: absolute;
+        right: 7px;
+        top: 9px;
+        color: #19191A;
+      }
+    }
+  }
+}
