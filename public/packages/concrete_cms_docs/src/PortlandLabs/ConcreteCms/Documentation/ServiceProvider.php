@@ -13,6 +13,8 @@ use Concrete\Core\Asset\AssetList;
 use Concrete\Core\Authentication\AuthenticationType;
 use Concrete\Core\Entity\Package;
 use Concrete\Core\Events\EventDispatcher;
+use Concrete\Core\Filesystem\Element;
+use Concrete\Core\Filesystem\ElementManager;
 use Concrete\Core\Foundation\Service\Provider;
 use Concrete\Core\Http\Response;
 use Concrete\Core\Http\ResponseFactory;
@@ -32,6 +34,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use PortlandLabs\ConcreteCms\Documentation\Page\Relater;
 use PortlandLabs\ConcreteCms\Documentation\User\Avatar\AvatarService;
 use Exception;
+use PortlandLabs\ConcreteCmsTheme\Navigation\HeaderNavigationFactory;
 
 class ServiceProvider extends Provider
 {
@@ -137,5 +140,17 @@ class ServiceProvider extends Provider
                 }
             }
         });
+
+        // header navigation
+        $elementManager = $this->app->make(ElementManager::class);
+        $elementManager->register('sub_nav_custom', new Element('sub_nav_custom', 'concrete_cms_docs'));
+
+        $this->app->make('director')->addListener('on_before_render', function($event) {
+            // must be done in an event because it must come AFTER the concrete cms package registers the
+            // header navigation factory class as a singleton.
+            $headerNavigationFactory = app(HeaderNavigationFactory::class);
+            $headerNavigationFactory->setActiveSection(HeaderNavigationFactory::SECTION_SUPPORT);
+        });
+
     }
 }

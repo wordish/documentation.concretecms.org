@@ -15,6 +15,8 @@ use Concrete\Core\Database\EntityManager\Provider\StandardPackageProvider;
 use Concrete\Core\Entity\Package as PackageEntity;
 use Concrete\Core\Express\EntryBuilder;
 use Concrete\Core\Express\ObjectManager;
+use Concrete\Core\Filesystem\Element;
+use Concrete\Core\Filesystem\ElementManager;
 use Concrete\Core\Package\Package;
 use Concrete\Core\Package\PackageService;
 use Concrete\Core\Page\Page;
@@ -80,8 +82,6 @@ class Controller extends Package implements ProviderAggregateInterface
         $site = $this->app->make('site')->getActiveSiteForEditing();
         $siteConfig = $site->getConfigRepository();
 
-        $siteConfig->save("concrete_cms_theme.elements_package_handle", "concrete_cms_docs");
-        $siteConfig->save("concrete_cms_theme.override_sub_nav", true);
         $siteConfig->save("concrete_cms_theme.enable_dark_mode", true);
 
         // Allow registered users to access the sitemap (required to display the page selector in the composer form)
