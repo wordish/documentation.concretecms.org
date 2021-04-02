@@ -88,15 +88,13 @@ class ServiceProvider extends Provider
         });
 
         // force to use the community login if community login is enabled
+        /*
         $u = new User();
-
-        /** @var AuthenticationType $externalAuthType */
         try {
             $externalAuthType = AuthenticationType::getByHandle("external_concrete5");
 
             if ($externalAuthType->isEnabled() && !$u->isRegistered()) {
                 $router->all("/login", function () use ($app) {
-                    /** @var ResponseFactory $responseFactory */
                     $responseFactory = $app->make(ResponseFactory::class);
                     $responseFactory->redirect((string)Url::to("/ccm/system/authentication/oauth2/external_concrete5/attempt_auth"), Response::HTTP_TEMPORARY_REDIRECT)->send();
                     $app->shutdown();
@@ -105,6 +103,7 @@ class ServiceProvider extends Provider
         } catch (Exception $e) {
             // SKip any issues
         }
+        */
 
         $eventDispatcher->addListener('on_page_delete', function ($event) use ($app) {
             /** @var DeletePageEvent $event */
