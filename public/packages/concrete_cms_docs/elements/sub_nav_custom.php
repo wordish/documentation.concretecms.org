@@ -14,21 +14,25 @@ use Concrete\Core\Support\Facade\Url;
 use Concrete\Core\User\User;
 use Concrete\Core\Validation\CSRF\Token;
 use Concrete\Core\Support\Facade\Application;
+use PortlandLabs\ConcreteCmsTheme\Navigation\UrlManager;
 
 $c = Page::getCurrentPage();
 $user = new User();
 $app = Application::getFacadeApplication();
 /** @var Token $token */
 $token = $app->make(Token::class);
+$urlManager = $app->make(UrlManager::class);
+
 ?>
 
 <div id="ccm-sub-nav">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h3>
+                <a href="<?=$urlManager->getDocumentationUrl()?>"><h3>
                     <?php echo t("Documentation"); ?>
                 </h3>
+                </a>
 
                 <nav>
                     <ul>
