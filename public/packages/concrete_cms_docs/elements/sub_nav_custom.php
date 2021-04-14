@@ -72,18 +72,6 @@ $urlManager = $app->make(UrlManager::class);
                                     <?php echo t("Your Contributions"); ?>
                                 </a>
                             </li>
-
-                            <li>
-                                <a href="<?php echo (string)Url::to('/login', 'do_logout', $token->generate('do_logout')); ?>">
-                                    <?php echo t("Sign Out"); ?>
-                                </a>
-                            </li>
-                        <?php } else { ?>
-                            <li>
-                                <a href="<?php echo (string)Url::to('/login') ?>">
-                                    <?php echo t("Sign In"); ?>
-                                </a>
-                            </li>
                         <?php } ?>
 
                     </ul>
