@@ -17,3 +17,69 @@
     }
   }
 }
+
+.ccm-block-likes-this-wrapper {
+  margin-bottom: 20px;
+}
+
+.bootstrap-select .btn {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  line-height: 44px!important;
+}
+
+.breadcrumb-navigation {
+  display: none;
+}
+
+.tutorial-search-form {
+  margin-top: 25px;
+}
+
+main {
+  margin-bottom: 15px;
+}
+
+.white-container {
+  background-color: #ffffff;
+  padding: 20.5px;
+  height: 100%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.white-container .page-title,
+.white-container h4 {
+  padding-bottom: 23px;
+  border-bottom: 1px solid rgb(246, 246, 246);
+  font-size: 20px;
+  color: rgb(47, 48, 50);
+  line-height: 28px;
+  font-weight: bold;
+  font-family: "Open Sans";
+  margin-bottom: 23px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-top: 9.5px;
+}
+
+.white-container .nav {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.white-container .nav li a {
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 45px;
+  color: rgb(1, 125, 221);
+  font-weight: 600;
+  word-break: break-word;
+}
+
+
+@media screen and (max-width: 768px) {
+  .white-container .nav li {
+    text-align: left;
+  }
+}
