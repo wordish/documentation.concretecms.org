@@ -149,7 +149,7 @@ $userInfoRepository = $app->make(UserInfoRepository::class);
                                         ) ?>
                                     </div>
 
-                                    <!--
+                                    <?php /*
                                     <div class="total-comments">
                                         <i class="far fa-comment"></i> <?php echo $inspector->getTotalComments() ?>
                                     </div>
@@ -157,7 +157,7 @@ $userInfoRepository = $app->make(UserInfoRepository::class);
                                     <div class="total-likes">
                                         <i class="far fa-heart"></i> <?php echo $inspector->getTotalLikes() ?>
                                     </div>
-                                    -->
+                                    */ ?>
                                 </div>
                             </td>
                         </tr>
