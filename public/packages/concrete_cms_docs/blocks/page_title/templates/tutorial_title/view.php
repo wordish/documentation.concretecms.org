@@ -46,7 +46,7 @@ if (is_object($audienceObject)) {
         </div>
     <?php } ?>
 
-
+    <?php /*
     <div class="total-comments">
         <i class="far fa-comment"></i> <?php echo $inspector->getTotalComments() ?>
     </div>
@@ -54,6 +54,7 @@ if (is_object($audienceObject)) {
     <div class="total-likes">
         <i class="far fa-heart"></i> <?php echo $inspector->getTotalLikes() ?>
     </div>
+    */ ?>
 
     <?php if ($inspector->canEditInDocumentationComposer()) { ?>
         <div class="edit-page">
