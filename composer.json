@@ -20,7 +20,8 @@
     "concrete5/dependency-patches": "^1.4.0",
     "vlucas/phpdotenv": "^2.4",
     "concrete5/concrete_cms_theme": "dev-master",
-    "aembler/addon_markdown": "^1.0"
+    "aembler/addon_markdown": "^1.0",
+    "concrete5/community_api_client": "^1"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.0",
@@ -55,6 +56,18 @@
         "version": "1.0.0",
         "source": {
           "url": "https://bitbucket.org/aembler/addon_markdown.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    "community_api_client": {
+      "type": "package",
+      "package": {
+        "name": "concrete5/community_api_client",
+        "version": "1.0.0",
+        "source": {
+          "url": "https://github.com/concrete5/community_api_client.git",
           "type": "git",
           "reference": "master"
         }

@@ -11,6 +11,7 @@ namespace PortlandLabs\ConcreteCms\Documentation;
 
 use Concrete\Core\Asset\AssetList;
 use Concrete\Core\Authentication\AuthenticationType;
+use Concrete\Core\Config\Repository\Repository;
 use Concrete\Core\Entity\Package;
 use Concrete\Core\Events\EventDispatcher;
 use Concrete\Core\Filesystem\Element;
@@ -31,6 +32,7 @@ use Concrete\Core\User\UserInfo;
 use Concrete\Core\View\View;
 use Concrete\Package\ConcreteCmsDocs\Controller;
 use Doctrine\ORM\EntityManagerInterface;
+use PortlandLabs\CommunityApiClient\Models\Achievements;
 use PortlandLabs\ConcreteCms\Documentation\Page\Relater;
 use PortlandLabs\ConcreteCms\Documentation\User\Avatar\AvatarService;
 use Exception;
@@ -84,6 +86,15 @@ class ServiceProvider extends Provider
                 }
 
                 $entityManager->flush();
+
+                // Assign badge through API
+                /** @var Repository $config */
+                $config = $app->make(Repository::class);
+                /** @var Achievements $achievements */
+                $achievements = $app->make(Achievements::class, [
+                    "user" => User::getByUserID($page->getVersionObject()->getVersionAuthorUserID()) // override the user object with the author of the current page version
+                ]);
+                $achievements->assign($config->get("documentation.badge_handle", "documentation_author")); // use config value store so it's possible to change the badge handle
             }
         });
 
