@@ -94,7 +94,14 @@ class ServiceProvider extends Provider
                 $achievements = $app->make(Achievements::class, [
                     "user" => User::getByUserID($page->getVersionObject()->getVersionAuthorUserID()) // override the user object with the author of the current page version
                 ]);
-                $achievements->assign($config->get("documentation.badge_handle", "documentation_author")); // use config value store so it's possible to change the badge handle
+                
+                if ($page->getPageTypeHandle() == 'document') {
+                    $achievementHandle = "new_documentation";
+                } else {
+                    $achievementHandle = "new_tutorial";
+                }
+
+                $achievements->assign($achievementHandle);
             }
         });
 
