@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df0668021c6a3c5542cc9e5b4525e1e7",
+    "content-hash": "23ac6341931c4f152a7f2a2989b5582f",
     "packages": [
         {
             "name": "aembler/addon_markdown",
@@ -4526,7 +4526,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/1.26.1"
+                "source": "https://github.com/Seldaek/monolog/tree/1.26.0"
             },
             "funding": [
                 {
@@ -11154,7 +11154,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "concrete5/core": 20,
-        "concrete5/concrete_cms_theme": 20
+        "concrete5/concrete_cms_theme": 20,
+        "concrete5/community_api_client": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
