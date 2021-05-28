@@ -9,6 +9,7 @@
 
 namespace Concrete\Package\ConcreteCmsDocs;
 
+use Concrete\Core\Application\UserInterface\Dashboard\Navigation\NavigationCache;
 use Concrete\Core\Config\Repository\Repository;
 use Concrete\Core\Database\EntityManager\Provider\ProviderAggregateInterface;
 use Concrete\Core\Database\EntityManager\Provider\StandardPackageProvider;
@@ -35,7 +36,7 @@ class Controller extends Package implements ProviderAggregateInterface
 {
     protected $pkgHandle = 'concrete_cms_docs';
     protected $appVersionRequired = '9.0';
-    protected $pkgVersion = '1.0';
+    protected $pkgVersion = '1.1';
     protected $pkgAllowsFullContentSwap = true;
     protected $pkgAutoloaderRegistries = [
         'src/PortlandLabs/ConcreteCms/Documentation' => 'PortlandLabs\ConcreteCms\Documentation'
@@ -159,5 +160,17 @@ class Controller extends Package implements ProviderAggregateInterface
             });
         } catch (Exception $e) {
         }
+    }
+
+    public function upgrade() {
+        $pkg = parent::upgrade();
+
+        $this->installContentFile("data.xml");
+
+        /** @var NavigationCache $navigationCache */
+        $navigationCache = $this->app->make(NavigationCache::class);
+        $navigationCache->clear();
+
+        return $pkg;
     }
 }

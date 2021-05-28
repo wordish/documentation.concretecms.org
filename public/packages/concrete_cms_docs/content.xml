@@ -7554,6 +7554,16 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
         </page>
     </pages>
     <singlepages>
+        <page name="Concrete CMS Documentation" path="/dashboard/concrete_cms_docs"
+              filename="/dashboard/concrete_cms_docs.php"
+              description=""
+              package="concrete_cms_docs"/>
+
+        <page name="Settings" path="/dashboard/concrete_cms_docs/settings"
+              filename="/dashboard/concrete_cms_docs/settings.php"
+              description=""
+              package="concrete_cms_docs"/>
+
         <page name="My Contributions" path="/contributions" filename="/contributions/view.php" pagetype="" user="admin"
               description="" package="concrete_cms_docs">
             <attributes>
