@@ -9,15 +9,12 @@
 
 namespace Concrete\Package\ConcreteCmsDocs;
 
-use Concrete\Core\Application\UserInterface\Dashboard\Navigation\NavigationCache;
 use Concrete\Core\Config\Repository\Repository;
 use Concrete\Core\Database\EntityManager\Provider\ProviderAggregateInterface;
 use Concrete\Core\Database\EntityManager\Provider\StandardPackageProvider;
 use Concrete\Core\Entity\Package as PackageEntity;
 use Concrete\Core\Express\EntryBuilder;
 use Concrete\Core\Express\ObjectManager;
-use Concrete\Core\Filesystem\Element;
-use Concrete\Core\Filesystem\ElementManager;
 use Concrete\Core\Package\Package;
 use Concrete\Core\Package\PackageService;
 use Concrete\Core\Page\Page;
@@ -160,17 +157,5 @@ class Controller extends Package implements ProviderAggregateInterface
             });
         } catch (Exception $e) {
         }
-    }
-
-    public function upgrade() {
-        $pkg = parent::upgrade();
-
-        $this->installContentFile("data.xml");
-
-        /** @var NavigationCache $navigationCache */
-        $navigationCache = $this->app->make(NavigationCache::class);
-        $navigationCache->clear();
-
-        return $pkg;
     }
 }

@@ -32,7 +32,7 @@ use Concrete\Core\User\UserInfo;
 use Concrete\Core\View\View;
 use Concrete\Package\ConcreteCmsDocs\Controller;
 use Doctrine\ORM\EntityManagerInterface;
-use PortlandLabs\ConcreteCms\Documentation\CommunityApiClient\Models\Achievements;
+use PortlandLabs\CommunityBadgesClient\Models\Achievements;
 use PortlandLabs\ConcreteCms\Documentation\Page\Relater;
 use PortlandLabs\ConcreteCms\Documentation\User\Avatar\AvatarService;
 use Exception;
