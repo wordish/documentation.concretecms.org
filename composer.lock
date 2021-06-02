@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23ac6341931c4f152a7f2a2989b5582f",
+    "content-hash": "88f8e5325297a5716976909f26075b77",
     "packages": [
         {
             "name": "aembler/addon_markdown",
@@ -530,6 +530,41 @@
                 }
             ],
             "time": "2021-05-24T07:46:03+00:00"
+        },
+        {
+            "name": "concrete5/community_badges_client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/concrete5/community_badges_client.git",
+                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concrete5/community_badges_client/zipball/86bebea02af50cfb91c09fdc8e3e987556f56be6",
+                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6",
+                "shasum": ""
+            },
+            "require": {
+                "kamermans/guzzle-oauth2-subscriber": "^1.0"
+            },
+            "default-branch": true,
+            "type": "concrete5-package",
+            "autoload": {
+                "psr-4": {
+                    "PortlandLabs\\CommunityBadgesClient\\": "src/PortlandLabs/CommunityBadgesClient"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Assign badges remotely to the community site.",
+            "support": {
+                "issues": "https://github.com/concrete5/community_badges_client/issues",
+                "source": "https://github.com/concrete5/community_badges_client/tree/master"
+            },
+            "time": "2021-06-02T03:32:36+00:00"
         },
         {
             "name": "concrete5/concrete_cms_theme",
@@ -11155,7 +11190,7 @@
     "stability-flags": {
         "concrete5/core": 20,
         "concrete5/concrete_cms_theme": 20,
-        "concrete5/community_api_client": 20
+        "concrete5/community_badges_client": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
