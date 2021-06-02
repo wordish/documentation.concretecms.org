@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23ac6341931c4f152a7f2a2989b5582f",
+    "content-hash": "d722c7fe030b083b49dba9500b14dc14",
     "packages": [
         {
             "name": "aembler/addon_markdown",
@@ -567,17 +567,52 @@
             "time": "2021-05-27T19:52:59+00:00"
         },
         {
+            "name": "concrete5/community_badges_client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/concrete5/community_badges_client.git",
+                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concrete5/community_badges_client/zipball/86bebea02af50cfb91c09fdc8e3e987556f56be6",
+                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6",
+                "shasum": ""
+            },
+            "require": {
+                "kamermans/guzzle-oauth2-subscriber": "^1.0"
+            },
+            "default-branch": true,
+            "type": "concrete5-package",
+            "autoload": {
+                "psr-4": {
+                    "PortlandLabs\\CommunityBadgesClient\\": "src/PortlandLabs/CommunityBadgesClient"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Assign badges remotely to the community site.",
+            "support": {
+                "issues": "https://github.com/concrete5/community_badges_client/issues",
+                "source": "https://github.com/concrete5/community_badges_client/tree/master"
+            },
+            "time": "2021-06-02T03:32:36+00:00"
+        },
+        {
             "name": "concrete5/concrete_cms_theme",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "09f33e56c814536feaedf51ddcfca4661a868c6b"
+                "reference": "5155baaa7eeebbf0bfe7d51d015f6640e1dea695"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/09f33e56c814536feaedf51ddcfca4661a868c6b",
-                "reference": "09f33e56c814536feaedf51ddcfca4661a868c6b",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/5155baaa7eeebbf0bfe7d51d015f6640e1dea695",
+                "reference": "5155baaa7eeebbf0bfe7d51d015f6640e1dea695",
                 "shasum": ""
             },
             "default-branch": true,
@@ -591,7 +626,7 @@
                 "issues": "https://github.com/concrete5/concrete_cms_theme/issues",
                 "source": "https://github.com/concrete5/concrete_cms_theme/tree/master"
             },
-            "time": "2021-05-20T22:04:57+00:00"
+            "time": "2021-06-02T02:28:44+00:00"
         },
         {
             "name": "concrete5/core",
@@ -599,12 +634,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete5-core.git",
-                "reference": "8890604793b0de4228c5e24a36b736e127707b54"
+                "reference": "218c8e9cc9428bbbcc088a0383e89de5fff050da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/8890604793b0de4228c5e24a36b736e127707b54",
-                "reference": "8890604793b0de4228c5e24a36b736e127707b54",
+                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/218c8e9cc9428bbbcc088a0383e89de5fff050da",
+                "reference": "218c8e9cc9428bbbcc088a0383e89de5fff050da",
                 "shasum": ""
             },
             "require": {
@@ -725,7 +760,7 @@
                 "slack": "https://www.concrete5.org/slack",
                 "source": "http://documentation.concrete5.org/api/"
             },
-            "time": "2021-05-20T18:13:27+00:00"
+            "time": "2021-05-28T15:16:26+00:00"
         },
         {
             "name": "concrete5/dependency-patches",
@@ -4491,16 +4526,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.26.0",
+            "version": "1.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33"
+                "reference": "c6b00f05152ae2c9b04a448f99c7590beb6042f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
-                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c6b00f05152ae2c9b04a448f99c7590beb6042f5",
+                "reference": "c6b00f05152ae2c9b04a448f99c7590beb6042f5",
                 "shasum": ""
             },
             "require": {
@@ -4561,7 +4596,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/1.26.0"
+                "source": "https://github.com/Seldaek/monolog/tree/1.26.1"
             },
             "funding": [
                 {
@@ -4573,7 +4608,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-14T12:56:38+00:00"
+            "time": "2021-05-28T08:32:12+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -6102,16 +6137,16 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v4.4.22",
+            "version": "v4.4.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "45b2136377cca5f10af858968d6079a482bca473"
+                "reference": "a8d2d5c94438548bff9f998ca874e202bb29d07f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/45b2136377cca5f10af858968d6079a482bca473",
-                "reference": "45b2136377cca5f10af858968d6079a482bca473",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/a8d2d5c94438548bff9f998ca874e202bb29d07f",
+                "reference": "a8d2d5c94438548bff9f998ca874e202bb29d07f",
                 "shasum": ""
             },
             "require": {
@@ -6151,7 +6186,7 @@
             "description": "Provides tools to ease debugging PHP code",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/debug/tree/v4.4.22"
+                "source": "https://github.com/symfony/debug/tree/v4.4.25"
             },
             "funding": [
                 {
@@ -6167,7 +6202,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-02T07:50:12+00:00"
+            "time": "2021-05-26T17:39:37+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -6596,16 +6631,16 @@
         },
         {
             "name": "symfony/inflector",
-            "version": "v4.4.23",
+            "version": "v4.4.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/inflector.git",
-                "reference": "89dc6b7d1143c114e7e251ab965f4a751bfe7ad5"
+                "reference": "fc695ab721136b27aa84427a0fa80189761266ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/inflector/zipball/89dc6b7d1143c114e7e251ab965f4a751bfe7ad5",
-                "reference": "89dc6b7d1143c114e7e251ab965f4a751bfe7ad5",
+                "url": "https://api.github.com/repos/symfony/inflector/zipball/fc695ab721136b27aa84427a0fa80189761266ef",
+                "reference": "fc695ab721136b27aa84427a0fa80189761266ef",
                 "shasum": ""
             },
             "require": {
@@ -6646,7 +6681,7 @@
                 "words"
             ],
             "support": {
-                "source": "https://github.com/symfony/inflector/tree/v4.4.23"
+                "source": "https://github.com/symfony/inflector/tree/v4.4.25"
             },
             "funding": [
                 {
@@ -6663,20 +6698,20 @@
                 }
             ],
             "abandoned": "use `EnglishInflector` from the String component instead",
-            "time": "2021-05-10T14:36:02+00:00"
+            "time": "2021-05-26T17:39:37+00:00"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v5.2.4",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "5d0f633f9bbfcf7ec642a2b5037268e61b0a62ce"
+                "reference": "162e886ca035869866d233a2bfef70cc28f9bbe5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/5d0f633f9bbfcf7ec642a2b5037268e61b0a62ce",
-                "reference": "5d0f633f9bbfcf7ec642a2b5037268e61b0a62ce",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/162e886ca035869866d233a2bfef70cc28f9bbe5",
+                "reference": "162e886ca035869866d233a2bfef70cc28f9bbe5",
                 "shasum": ""
             },
             "require": {
@@ -6716,7 +6751,7 @@
                 "options"
             ],
             "support": {
-                "source": "https://github.com/symfony/options-resolver/tree/v5.2.4"
+                "source": "https://github.com/symfony/options-resolver/tree/v5.3.0"
             },
             "funding": [
                 {
@@ -6732,7 +6767,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T12:56:27+00:00"
+            "time": "2021-05-26T17:43:10+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -11190,7 +11225,8 @@
     "stability-flags": {
         "concrete5/core": 20,
         "concrete5/concrete_cms_theme": 20,
-        "concrete5/community_api_client": 20
+        "concrete5/community_api_client": 20,
+        "concrete5/community_badges_client": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
