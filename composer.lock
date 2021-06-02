@@ -572,12 +572,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/community_badges_client.git",
-                "reference": "9b187880799978e5c5e8decb855fa356c93066b6"
+                "reference": "90a142c2f1a8c1daa73fa9ee8bf05ea51349cb66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/community_badges_client/zipball/9b187880799978e5c5e8decb855fa356c93066b6",
-                "reference": "9b187880799978e5c5e8decb855fa356c93066b6",
+                "url": "https://api.github.com/repos/concrete5/community_badges_client/zipball/90a142c2f1a8c1daa73fa9ee8bf05ea51349cb66",
+                "reference": "90a142c2f1a8c1daa73fa9ee8bf05ea51349cb66",
                 "shasum": ""
             },
             "require": {
@@ -597,9 +597,9 @@
             "description": "Assign badges remotely to the community site.",
             "support": {
                 "issues": "https://github.com/concrete5/community_badges_client/issues",
-                "source": "https://github.com/concrete5/community_badges_client/tree/better-test-connection"
+                "source": "https://github.com/concrete5/community_badges_client/tree/master"
             },
-            "time": "2021-06-02T16:01:53+00:00"
+            "time": "2021-06-02T22:26:33+00:00"
         },
         {
             "name": "concrete5/concrete_cms_theme",
