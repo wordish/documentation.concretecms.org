@@ -32,7 +32,7 @@ use Concrete\Core\User\UserInfo;
 use Concrete\Core\View\View;
 use Concrete\Package\ConcreteCmsDocs\Controller;
 use Doctrine\ORM\EntityManagerInterface;
-use PortlandLabs\CommunityApiClient\Models\Achievements;
+use PortlandLabs\CommunityBadgesClient\Models\Achievements;
 use PortlandLabs\ConcreteCms\Documentation\Page\Relater;
 use PortlandLabs\ConcreteCms\Documentation\User\Avatar\AvatarService;
 use Exception;
@@ -94,7 +94,7 @@ class ServiceProvider extends Provider
                 $achievements = $app->make(Achievements::class, [
                     "user" => User::getByUserID($page->getVersionObject()->getVersionAuthorUserID()) // override the user object with the author of the current page version
                 ]);
-                
+
                 if ($page->getPageTypeHandle() == 'document') {
                     $achievementHandle = "new_documentation";
                 } else {

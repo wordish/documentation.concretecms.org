@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d722c7fe030b083b49dba9500b14dc14",
+    "content-hash": "88f8e5325297a5716976909f26075b77",
     "packages": [
         {
             "name": "aembler/addon_markdown",
@@ -532,39 +532,39 @@
             "time": "2021-05-24T07:46:03+00:00"
         },
         {
-            "name": "concrete5/community_api_client",
+            "name": "concrete5/community_badges_client",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/concrete5/community_api_client.git",
-                "reference": "ee2f1d4d8dbff1335fd681f55752c890128dc8b5"
+                "url": "https://github.com/concrete5/community_badges_client.git",
+                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/community_api_client/zipball/ee2f1d4d8dbff1335fd681f55752c890128dc8b5",
-                "reference": "ee2f1d4d8dbff1335fd681f55752c890128dc8b5",
+                "url": "https://api.github.com/repos/concrete5/community_badges_client/zipball/86bebea02af50cfb91c09fdc8e3e987556f56be6",
+                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6",
                 "shasum": ""
             },
             "require": {
                 "kamermans/guzzle-oauth2-subscriber": "^1.0"
             },
             "default-branch": true,
-            "type": "library",
+            "type": "concrete5-package",
             "autoload": {
                 "psr-4": {
-                    "PortlandLabs\\CommunityApiClient\\": "src/PortlandLabs/CommunityApiClient"
+                    "PortlandLabs\\CommunityBadgesClient\\": "src/PortlandLabs/CommunityBadgesClient"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "This package contains an api client that is able to connect with the community.",
+            "description": "Assign badges remotely to the community site.",
             "support": {
-                "issues": "https://github.com/concrete5/community_api_client/issues",
-                "source": "https://github.com/concrete5/community_api_client/tree/master"
+                "issues": "https://github.com/concrete5/community_badges_client/issues",
+                "source": "https://github.com/concrete5/community_badges_client/tree/master"
             },
-            "time": "2021-05-27T19:52:59+00:00"
+            "time": "2021-06-02T03:32:36+00:00"
         },
         {
             "name": "concrete5/community_badges_client",
@@ -11225,7 +11225,10 @@
     "stability-flags": {
         "concrete5/core": 20,
         "concrete5/concrete_cms_theme": 20,
+<<<<<<< HEAD
+=======
         "concrete5/community_api_client": 20,
+>>>>>>> upstream/master
         "concrete5/community_badges_client": 20
     },
     "prefer-stable": true,
