@@ -537,41 +537,6 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/community_badges_client.git",
-                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/community_badges_client/zipball/86bebea02af50cfb91c09fdc8e3e987556f56be6",
-                "reference": "86bebea02af50cfb91c09fdc8e3e987556f56be6",
-                "shasum": ""
-            },
-            "require": {
-                "kamermans/guzzle-oauth2-subscriber": "^1.0"
-            },
-            "default-branch": true,
-            "type": "concrete5-package",
-            "autoload": {
-                "psr-4": {
-                    "PortlandLabs\\CommunityBadgesClient\\": "src/PortlandLabs/CommunityBadgesClient"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Assign badges remotely to the community site.",
-            "support": {
-                "issues": "https://github.com/concrete5/community_badges_client/issues",
-                "source": "https://github.com/concrete5/community_badges_client/tree/master"
-            },
-            "time": "2021-06-02T03:32:36+00:00"
-        },
-        {
-            "name": "concrete5/community_badges_client",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/concrete5/community_badges_client.git",
                 "reference": "90a142c2f1a8c1daa73fa9ee8bf05ea51349cb66"
             },
             "dist": {
@@ -607,12 +572,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "b255277819c47a817d50a51786f88867a2be14a0"
+                "reference": "7e4e1309177e3be5c746969989a64a9d91fdf845"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/b255277819c47a817d50a51786f88867a2be14a0",
-                "reference": "b255277819c47a817d50a51786f88867a2be14a0",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/7e4e1309177e3be5c746969989a64a9d91fdf845",
+                "reference": "7e4e1309177e3be5c746969989a64a9d91fdf845",
                 "shasum": ""
             },
             "default-branch": true,
@@ -626,7 +591,7 @@
                 "issues": "https://github.com/concrete5/concrete_cms_theme/issues",
                 "source": "https://github.com/concrete5/concrete_cms_theme/tree/master"
             },
-            "time": "2021-06-14T16:32:06+00:00"
+            "time": "2021-06-16T23:33:03+00:00"
         },
         {
             "name": "concrete5/core",
@@ -634,12 +599,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete5-core.git",
-                "reference": "49701e8fbcd5c8566b11ad9051e15c67f557646e"
+                "reference": "d85a8a3e5a9e13c52f9f4ce67ac9f823489a1f13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/49701e8fbcd5c8566b11ad9051e15c67f557646e",
-                "reference": "49701e8fbcd5c8566b11ad9051e15c67f557646e",
+                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/d85a8a3e5a9e13c52f9f4ce67ac9f823489a1f13",
+                "reference": "d85a8a3e5a9e13c52f9f4ce67ac9f823489a1f13",
                 "shasum": ""
             },
             "require": {
@@ -760,7 +725,7 @@
                 "slack": "https://www.concrete5.org/slack",
                 "source": "http://documentation.concrete5.org/api/"
             },
-            "time": "2021-06-05T01:38:25+00:00"
+            "time": "2021-06-16T23:36:27+00:00"
         },
         {
             "name": "concrete5/dependency-patches",
@@ -11225,10 +11190,6 @@
     "stability-flags": {
         "concrete5/core": 20,
         "concrete5/concrete_cms_theme": 20,
-<<<<<<< HEAD
-=======
-        "concrete5/community_api_client": 20,
->>>>>>> upstream/master
         "concrete5/community_badges_client": 20
     },
     "prefer-stable": true,
