@@ -23,7 +23,7 @@ $userInfo = $userInfoRepository->getByID($page->getCollectionUserID());
 $inspector = new PageInspector($page);
 ?>
 <div class="ccm-docs-title">
-    <h1 class="page-title">
+    <h1>
         <?php echo h($title) ?>
     </h1>
 
