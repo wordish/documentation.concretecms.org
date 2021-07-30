@@ -37,6 +37,7 @@ use PortlandLabs\ConcreteCms\Documentation\Page\Relater;
 use PortlandLabs\ConcreteCms\Documentation\User\Avatar\AvatarService;
 use Exception;
 use PortlandLabs\ConcreteCmsTheme\Navigation\HeaderNavigationFactory;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ServiceProvider extends Provider
 {
@@ -108,7 +109,7 @@ class ServiceProvider extends Provider
         // force to use the community login if community login is enabled
         /*
         $u = new User();
-        try {
+        try
             $externalAuthType = AuthenticationType::getByHandle("external_concrete5");
 
             if ($externalAuthType->isEnabled() && !$u->isRegistered()) {
@@ -122,6 +123,8 @@ class ServiceProvider extends Provider
             // SKip any issues
         }
         */
+
+        $router->get('/ccm/documentation/remote_search', 'Concrete\Package\ConcreteCmsDocs\Controller\RemoteHelp::view');
 
         $eventDispatcher->addListener('on_page_delete', function ($event) use ($app) {
             /** @var DeletePageEvent $event */
