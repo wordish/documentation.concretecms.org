@@ -1,0 +1,33 @@
+docker-compose-yaml: docker-compose.yml
+
+project: community-concretecms-com
+
+environments:
+  develop:
+    routes:
+      - nginx:
+          - "community.stage.concretecms.com":
+              tls-acme: 'true'
+              insecure: Redirect
+              hsts: max-age=31536000
+    types:
+      mariadb: mariadb-shared
+    rollouts:
+      mariadb: statefulset
+
+tasks:
+  post-rollout:
+    - run:
+        name: Fix directories
+        command: mkdir -p /storage/files /storage/generated_overrides /storage/proxies
+        service: cli
+    - run:
+        name: Generate proxies
+        command: CONCRETE5_ENV=lagoon ./vendor/bin/concrete5 orm:gen:pro || true
+        service: cli
+    - run:
+        name: Generate proxies
+        command: CONCRETE5_ENV=lagoon ./vendor/bin/concrete5 orm:gen:pro || true
+        service: nginx
+        container: php
+

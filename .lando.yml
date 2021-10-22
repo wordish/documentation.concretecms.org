@@ -1,0 +1,16 @@
+name: documentation-concretecms-org
+recipe: lagoon
+config:
+  build:
+    - composer install
+tooling:
+  concrete:
+    service: cli
+    description: Run the concrete cli tool
+    cmd: vendor/bin/concrete5
+  install:
+    service: cli
+    description: Install community.concretecms.com
+    cmd:
+      - cli: mv public/application/config/lagoon.database.php public/application/config/lagoon.bak.database.php
+      - cli: vendor/bin/concrete5 c5:install -vvv --db-server=mariadb --db-database=lagoon --db-username=lagoon --db-password=lagoon --starting-point=concrete_cms_community --admin-email=your@email.com --admin-password=password; mv public/application/config/lagoon.bak.database.php public/application/config/lagoon.database.php

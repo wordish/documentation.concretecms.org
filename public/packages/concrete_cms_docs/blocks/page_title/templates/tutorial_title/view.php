@@ -6,6 +6,7 @@ use Concrete\Core\Localization\Service\Date;
 use Concrete\Core\Page\Page;
 use Concrete\Core\Support\Facade\Application;
 use Concrete\Core\Support\Facade\Url;
+use Concrete\Core\User\User;
 use Concrete\Core\User\UserInfo;
 use Concrete\Core\User\UserInfoRepository;
 use PortlandLabs\ConcreteCms\Documentation\Page\PageInspector;
@@ -22,6 +23,7 @@ $userInfo = $userInfoRepository->getByID($page->getCollectionUserID());
 
 $inspector = new PageInspector($page);
 
+$currentUser = $app->make(User::class);
 
 $audience = [];
 $audienceObject = $page->getAttribute('audience');
@@ -56,13 +58,25 @@ if (is_object($audienceObject)) {
     </div>
     */ ?>
 
-    <?php if ($inspector->canEditInDocumentationComposer()) { ?>
+    <?php
+    if ($inspector->canEditInDocumentationComposer()) {
+        ?>
         <div class="edit-page">
             <a href="<?php echo (string)Url::to("/contribute", "edit", $page->getCollectionID())?>">
                 <?php echo t("Edit"); ?>
             </a>
         </div>
-    <?php } ?>
+        <?php
+    } elseif (!$currentUser->isRegistered()) {
+        ?>
+        <div class="edit-page">
+            <a href="<?= (string) Url::to("/login?r=/contribute/edit/{$page->getCollectionID()}") ?>">
+                <?php echo t("Edit"); ?>
+            </a>
+        </div>
+        <?php
+    }
+    ?>
 
     <div class="clearfix"></div>
 </div>
