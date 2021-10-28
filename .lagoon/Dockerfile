@@ -1,0 +1,4 @@
+ARG CLI_IMAGE
+ARG
+
+FROM ${CLI_IMAGE} as cli
