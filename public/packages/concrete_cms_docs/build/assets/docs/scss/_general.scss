@@ -83,3 +83,11 @@ main {
     text-align: left;
   }
 }
+
+.ccm-block-markdown-content th {
+  padding-right: 1rem;
+
+  &:last-child {
+    padding-right: 0 !important;
+  }
+}
