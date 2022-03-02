@@ -91,3 +91,11 @@ main {
     padding-right: 0 !important;
   }
 }
+
+main ul.nav > li {
+  border-bottom: solid 1px #e0e0e0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
