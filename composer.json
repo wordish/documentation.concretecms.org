@@ -33,7 +33,12 @@
     "hautelook/phpass": "*"
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true,
+      "mlocati/composer-patcher": true,
+      "composer/installers": true
+    }
   },
   "extra": {
     "allow-subpatches": [
