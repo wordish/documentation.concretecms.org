@@ -92,10 +92,14 @@ main {
   }
 }
 
-main ul.nav > li {
-  border-bottom: solid 1px #e0e0e0;
+.col-sidebar .nav li,
+main .nav li {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  line-height: 26px !important;
+}
 
-  &:last-child {
-    border-bottom: none;
-  }
+.col-sidebar .nav li a,
+main .nav li a {
+  line-height: 26px !important;
 }
