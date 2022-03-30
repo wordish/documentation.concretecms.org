@@ -30,7 +30,12 @@
     "mockery/mockery": "^1.2"
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "kylekatarnls/update-helper": true,
+      "mlocati/composer-patcher": true
+    }
   },
   "extra": {
     "allow-subpatches": [
