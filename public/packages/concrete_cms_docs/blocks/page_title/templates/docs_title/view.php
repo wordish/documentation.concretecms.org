@@ -30,6 +30,7 @@ $currentUser = $app->make(User::class)
         <?php echo h($title) ?>
     </h1>
 
+    <?php /*
     <div class="page-date">
         <?php echo $date; ?>
     </div>
@@ -40,7 +41,6 @@ $currentUser = $app->make(User::class)
         </div>
     <?php } ?>
 
-    <?php /*
     <div class="total-comments">
         <i class="far fa-comment"></i> <?php echo $inspector->getTotalComments() ?>
     </div>

@@ -7,7 +7,10 @@
 
 
 &.page-type-developer-document,
-&.page-type-editor-document {
+&.page-type-tutorial,
+&.page-type-editor-document,
+&.page-type-section {
+
   .ccm-docs-title {
     display: block;
     border-bottom: 1px solid #DFDEDE;
