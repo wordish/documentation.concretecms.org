@@ -51,8 +51,11 @@ $dh = $app->make(Date::class);
 
             $ui = $userInfoRepository->getByID($result->getCollectionUserID());
 
+            $profileUrl = null;
+
             if ($ui instanceof UserInfo) {
                 $username = $ui->getUserDisplayName();
+                $profileUrl = $ui->getUserPublicProfileUrl();
             }
 
             $inspector = new PageInspector($result);
@@ -69,7 +72,13 @@ $dh = $app->make(Date::class);
                 </div>
 
                 <div class="recent-tutorial-author">
-                    <?php echo t("By %s.", sprintf("<a href=\"#\">%s</a>", $username)); ?>
+                    <?php
+                    if ($profileUrl) {
+                        ?>
+                        <?php echo t("By %s.", sprintf("<a href=\"%s\">%s</a>", $profileUrl, $username)); ?>
+                    <?php } else { ?>
+                        <?php echo t("By %s.", $username); ?>
+                    <?php } ?>
                 </div>
 
                 <div class="clearfix"></div>

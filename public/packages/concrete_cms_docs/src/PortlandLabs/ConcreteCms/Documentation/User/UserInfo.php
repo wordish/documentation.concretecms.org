@@ -11,6 +11,7 @@ namespace PortlandLabs\ConcreteCms\Documentation\User;
 
 use Concrete\Core\User\UserInfo as CoreUserInfo;
 use League\Url\Url;
+use PortlandLabs\ConcreteCmsTheme\Navigation\UrlManager;
 
 class UserInfo extends CoreUserInfo
 {
@@ -32,11 +33,13 @@ class UserInfo extends CoreUserInfo
 
     public function getUserPublicProfileUrl()
     {
+        $urlManager = app(UrlManager::class);
         if ($this->getUserCommunityUserID()) {
-            $url = Url::createFromUrl("https://www.concretecms.org/profile/-/view");
+            $url = Url::createFromUrl($urlManager->getCommunityUrl() . '/members/profile');
             $path = $url->getPath();
             $path->append((string)$this->getUserCommunityUserID());
             return $url->setPath($path);
         }
+        return null;
     }
 }
