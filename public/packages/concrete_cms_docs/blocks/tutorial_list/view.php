@@ -48,7 +48,7 @@ $userInfoRepository = $app->make(UserInfoRepository::class);
 
         <div class="col-md-6">
             <div class="float-right">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
                    aria-haspopup="true"
                    aria-expanded="false">
                     <?php echo $audienceLabel ?>
