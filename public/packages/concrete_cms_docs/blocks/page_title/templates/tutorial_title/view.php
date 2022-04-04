@@ -38,7 +38,6 @@ if (is_object($audienceObject)) {
         <?php echo h($title) ?>
     </h1>
 
-    <?php /*
     <div class="page-date">
         <?php echo $date; ?>
     </div>
@@ -49,6 +48,7 @@ if (is_object($audienceObject)) {
         </div>
     <?php } ?>
 
+    <?php /*
     <div class="total-comments">
         <i class="far fa-comment"></i> <?php echo $inspector->getTotalComments() ?>
     </div>
