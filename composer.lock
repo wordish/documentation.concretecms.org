@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "046a3ad7a2a53b6e2300ca5041b125d6",
+    "content-hash": "f7803a6ed8fc85e058780a2f681f4a51",
     "packages": [
         {
             "name": "aembler/addon_markdown",
@@ -390,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "963a27f3247889f4f71c2a3f8a873964482339cb"
+                "reference": "4219751bf57e753c59a2aa9abdd05922cd81850e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/963a27f3247889f4f71c2a3f8a873964482339cb",
-                "reference": "963a27f3247889f4f71c2a3f8a873964482339cb",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/4219751bf57e753c59a2aa9abdd05922cd81850e",
+                "reference": "4219751bf57e753c59a2aa9abdd05922cd81850e",
                 "shasum": ""
             },
             "default-branch": true,
@@ -409,7 +409,7 @@
                 "issues": "https://github.com/concrete5/concrete_cms_theme/issues",
                 "source": "https://github.com/concrete5/concrete_cms_theme/tree/master"
             },
-            "time": "2022-04-04T20:07:49+00:00"
+            "time": "2022-04-07T22:01:27+00:00"
         },
         {
             "name": "concrete5/core",
@@ -823,6 +823,46 @@
                 "source": "https://github.com/concrete5-forks/PHPoAuthUserData/tree/master"
             },
             "time": "2017-10-29T23:05:04+00:00"
+        },
+        {
+            "name": "concrete5/phpass-compat",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/concrete5/phpass-compat.git",
+                "reference": "754faee577f2595fa81dd1f9a932faee22f06279"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concrete5/phpass-compat/zipball/754faee577f2595fa81dd1f9a932faee22f06279",
+                "reference": "754faee577f2595fa81dd1f9a932faee22f06279",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hautelook\\Phpass\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Korvin Szanto",
+                    "email": "me@kor.vin"
+                }
+            ],
+            "description": "Hautlook/phpass shim",
+            "support": {
+                "issues": "https://github.com/concrete5/phpass-compat/issues",
+                "source": "https://github.com/concrete5/phpass-compat/tree/1.0"
+            },
+            "time": "2021-09-10T18:28:59+00:00"
         },
         {
             "name": "container-interop/container-interop",
