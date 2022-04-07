@@ -33,8 +33,8 @@ if (is_object($audienceObject)) {
     }
 }
 ?>
-<div class="ccm-tutorial-title">
-    <h1 class="page-title">
+<div class="ccm-docs-title">
+    <h1>
         <?php echo h($title) ?>
     </h1>
 

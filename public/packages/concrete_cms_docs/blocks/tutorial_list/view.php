@@ -48,7 +48,7 @@ $userInfoRepository = $app->make(UserInfoRepository::class);
 
         <div class="col-md-6">
             <div class="float-right">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
                    aria-haspopup="true"
                    aria-expanded="false">
                     <?php echo $audienceLabel ?>
@@ -123,8 +123,11 @@ $userInfoRepository = $app->make(UserInfoRepository::class);
 
                         $ui = $userInfoRepository->getByID($result->getCollectionUserID());
 
+                        $profileUrl = null;
+
                         if ($ui instanceof UserInfo) {
                             $username = $ui->getUserDisplayName();
+                            $profileUrl = $ui->getUserPublicProfileUrl();
                         }
 
                         $inspector = new PageInspector($result);
@@ -137,7 +140,13 @@ $userInfoRepository = $app->make(UserInfoRepository::class);
                                 </a>
 
                                 <p class="page-author">
-                                    <?php echo t("By %s.", sprintf("<a href=\"#\">%s</a>", $username)); ?>
+                                    <?php
+                                    if ($profileUrl) {
+                                    ?>
+                                        <?php echo t("By %s.", sprintf("<a href=\"%s\">%s</a>", $profileUrl, $username)); ?>
+                                    <?php } else { ?>
+                                        <?php echo t("By %s.", $username); ?>
+                                    <?php } ?>
                                 </p>
                             </td>
 

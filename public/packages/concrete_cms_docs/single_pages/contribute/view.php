@@ -34,60 +34,39 @@ $token = $app->make(Token::class);
 $userSelector = $app->make(UserSelector::class);
 
 ?>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1>
-                <?php echo $pageTitle ?>
-            </h1>
-        </div>
+
+    <div class="page-header mb-3">
+        <h1 class="page-title"><?php echo $pageTitle ?></h1>
     </div>
 
-    <div class="row">
-        <div class="col">
-            <form action="<?php echo $action ?>" method="post" enctype="multipart/form-data">
-                <?php echo $form->hidden('documentation_type', $documentationType) ?>
-                <?php echo $token->output('save') ?>
+    <form action="<?php echo $action ?>" method="post" enctype="multipart/form-data">
+        <?php echo $form->hidden('documentation_type', $documentationType) ?>
+        <?php echo $token->output('save') ?>
 
-                <div class="ccm-composer-form">
-                    <?php $pagetype->renderComposerOutputForm($document, $parent); ?>
-                </div>
-
-                <?php if (is_object($document)) { ?>
-                    <hr/>
-
-                    <div class="form-group">
-                        <?php echo $form->label('versionComment', t('Reason for Changes')) ?>
-                        <?php echo $form->textarea('versionComment', array('rows' => 4)) ?>
-                    </div>
-
-                    <?php if ($canEditDocumentAuthor) { ?>
-                        <div class="form-group">
-                            <?php echo $form->label('documentAuthor', t('Author')) ?>
-                            <?php echo $userSelector->quickSelect('documentAuthor', $documentAuthor); ?>
-                        </div>
-                    <?php } ?>
-
-                <?php } ?>
-
-                <div class="float-right">
-                    <button type="submit" class="btn btn-primary">
-                        <?php echo $buttonTitle ?>
-                    </button>
-                </div>
-            </form>
+        <div class="ccm-composer-form">
+            <?php $pagetype->renderComposerOutputForm($document, $parent); ?>
         </div>
-    </div>
-</div>
 
-<style type="text/css">
-    .ccm-composer-form .ccm-ui,
-    .ccm-composer-form .ccm-ui fieldset,
-    .ccm-composer-form .ccm-ui .form-group {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
+        <?php if (is_object($document)) { ?>
+            <hr/>
 
-    }
-</style>
+            <div class="form-group">
+                <?php echo $form->label('versionComment', t('Reason for Changes')) ?>
+                <?php echo $form->textarea('versionComment', array('rows' => 4)) ?>
+            </div>
+
+            <?php if ($canEditDocumentAuthor) { ?>
+                <div class="form-group">
+                    <?php echo $form->label('documentAuthor', t('Author')) ?>
+                    <?php echo $userSelector->quickSelect('documentAuthor', $documentAuthor); ?>
+                </div>
+            <?php } ?>
+
+        <?php } ?>
+
+        <div class="float-right">
+            <button type="submit" class="btn btn-primary">
+                <?php echo $buttonTitle ?>
+            </button>
+        </div>
+    </form>

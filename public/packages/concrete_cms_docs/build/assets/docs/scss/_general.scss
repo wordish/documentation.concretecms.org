@@ -22,12 +22,6 @@
   margin-bottom: 20px;
 }
 
-.bootstrap-select .btn {
-  padding-top: 0!important;
-  padding-bottom: 0!important;
-  line-height: 44px!important;
-}
-
 .breadcrumb-navigation {
   display: none;
 }
@@ -90,16 +84,4 @@ main {
   &:last-child {
     padding-right: 0 !important;
   }
-}
-
-.col-sidebar .nav li,
-main .nav li {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  line-height: 26px !important;
-}
-
-.col-sidebar .nav li a,
-main .nav li a {
-  line-height: 26px !important;
 }
