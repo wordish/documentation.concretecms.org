@@ -1,5 +1,7 @@
 FROM amazeeio/php:7.4-cli
 
+RUN apk update && apk upgrade --all
+
 # Use composer v2
 RUN composer global remove hirak/prestissimo
 RUN composer self-update --2
