@@ -125,6 +125,7 @@ class ServiceProvider extends Provider
         */
 
         $router->get('/ccm/documentation/remote_search', 'Concrete\Package\ConcreteCmsDocs\Controller\RemoteHelp::view');
+        $router->get('/api/search', 'Concrete\Package\ConcreteCmsDocs\Controller\ApiDocumentation::search');
 
         $eventDispatcher->addListener('on_page_delete', function ($event) use ($app) {
             /** @var DeletePageEvent $event */
