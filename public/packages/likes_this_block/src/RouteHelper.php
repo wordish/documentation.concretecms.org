@@ -9,8 +9,9 @@ class RouteHelper
 {
     public static function registerRoutes()
     {
-        Route::register(
-            Router::route(array('/list/{cID}', 'likes_this_block')),
+        $router = app('router');
+        $router->register(
+            $router->route(array('/list/{cID}', 'likes_this_block')),
             '\Concrete\Package\LikesThisBlock\Controller\LikeList::view',
             'LikesThisBlockList',
             array('cID' => '[0-9]+')
