@@ -1,4 +1,4 @@
-FROM amazeeio/php:7.4-cli
+FROM amazeeio/php:8.2-cli
 
 RUN apk update && apk upgrade --all
 
