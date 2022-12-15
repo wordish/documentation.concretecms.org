@@ -170,7 +170,7 @@ class ServiceProvider extends Provider
             // must be done in an event because it must come AFTER the concrete cms package registers the
             // header navigation factory class as a singleton.
             $headerNavigationFactory = app(HeaderNavigationFactory::class);
-            $headerNavigationFactory->setActiveSection(HeaderNavigationFactory::SECTION_SUPPORT);
+            $headerNavigationFactory->setActiveSection(HeaderNavigationFactory::SECTION_DOCUMENTATION);
         });
 
     }
