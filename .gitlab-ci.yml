@@ -15,6 +15,9 @@ include:
   - template: Dependency-Scanning.gitlab-ci.yml
 #  - template: License-Scanning.gitlab-ci.yml
 
+variables:
+  SAST_EXCLUDED_ANALYZERS: "nodejs-scan,semgrep"
+
 .ssh_key_setup: &ssh_key_setup
     # Adding support for ssh keys in order to download packages from bitbucket.
     - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
