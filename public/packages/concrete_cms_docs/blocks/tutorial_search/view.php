@@ -23,15 +23,16 @@ use Concrete\Core\View\View;
 $app = Application::getFacadeApplication();
 /** @var Form $form */
 $form = $app->make(Form::class);
-
-
+$selection = $selection ?? null;
+$audience = $audience ?? null;
+$placeholder = $placeholder ?? null;
 ?>
 
 <form action="<?php echo $view->action('search') ?>" class="tutorial-search-form"
       data-tutorial-search="<?php echo h($b->getBlockID()) ?>">
 
     <?php echo $form->hidden("audience", $audience); ?>
-    <?php echo $form->hidden("search", isset($selection) ? $selection->id : null); ?>
+    <?php echo $form->hidden("search", $selection?->id); ?>
     <?php echo $form->select("searchField", [], [
         "data-abs-ajax-url" => (string)$view->action('load_questions'),
         "data-abs-locale-empty-title" => (string)(is_object($selection) ? $selection->text : $placeholder)
