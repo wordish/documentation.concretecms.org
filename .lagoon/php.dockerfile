@@ -7,7 +7,7 @@ ENV CONCRETE5_ENV=lagoon
 
 COPY --from=cli /app /app
 
-RUN apk update && apk upgrade --all
+RUN apk update && apk upgrade --all && apk add icu-dev
 
 # Install required extensions
 RUN docker-php-ext-install intl

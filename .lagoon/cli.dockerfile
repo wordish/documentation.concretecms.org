@@ -1,6 +1,6 @@
 FROM amazeeio/php:8.2-cli
 
-RUN apk update && apk upgrade --all
+RUN apk update && apk upgrade --all && apk add icu-dev
 
 # Use composer v2
 RUN composer global remove hirak/prestissimo
