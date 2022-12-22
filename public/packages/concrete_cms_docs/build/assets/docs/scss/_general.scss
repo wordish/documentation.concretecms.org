@@ -85,3 +85,11 @@ main {
     padding-right: 0 !important;
   }
 }
+
+.ccm-block-markdown-content > h1:first-child,
+.ccm-block-markdown-content > h2:first-child,
+.ccm-block-markdown-content > h3:first-child,
+.ccm-block-markdown-content > h4:first-child,
+.ccm-block-markdown-content > h5:first-child {
+  margin-top: 0px !important;
+}
