@@ -25,6 +25,18 @@ use Concrete\Core\Validation\CSRF\Token;
 /** @var bool $canEditDocumentAuthor */
 /** @var int $documentAuthor */
 
+
+$buttonTitle = $buttonTitle ?? null;
+$pageTitle = $pageTitle ?? null;
+$action = $action ?? null;
+$documentationType = $documentationType ?? null;
+$pagetype = $pagetype ?? null;
+$document = $document ?? null;
+$canEditDocumentAuthor = $canEditDocumentAuthor ?? null;
+$documentAuthor = $documentAuthor ?? null;
+$parent = $parent ?? null;
+
+
 $app = Application::getFacadeApplication();
 /** @var Form $form */
 $form = $app->make(Form::class);
