@@ -153,9 +153,10 @@ $userInfoRepository = $app->make(UserInfoRepository::class);
                             <td>
                                 <div class="float-right d-none d-sm-block">
                                     <div class="timestamp">
-                                        <?php echo $dateService->describeInterval(
-                                            time() - $result->getCollectionDatePublicObject()->getTimestamp()
-                                        ) ?>
+                                        <?php
+                                        $date = \Carbon\Carbon::createFromTimestamp($result->getCollectionDatePublicObject()->getTimestamp());
+                                        echo $date->diffForHumans(short: true, parts: 2);
+                                        ?>
                                     </div>
 
                                     <?php /*
