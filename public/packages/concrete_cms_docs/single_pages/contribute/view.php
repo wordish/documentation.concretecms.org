@@ -46,6 +46,36 @@ $token = $app->make(Token::class);
 $userSelector = $app->make(UserSelector::class);
 
 ?>
+<script>
+    (function() {
+        let codeTagInt = setInterval(function() {
+            if (typeof window.CKEDITOR === 'undefined') return
+            clearInterval(codeTagInt)
+            setupCodeTag()
+        }, 10)
+
+        function setupCodeTag() {
+            CKEDITOR.plugins.add("codeTag", {
+                icons: "code",
+                init: function (editor) {
+                    let codeStyle = new CKEDITOR.style({element: "code"});
+                    editor.addCommand("wrapCode", new CKEDITOR.styleCommand(codeStyle));
+                    editor.ui.addButton("Code", {
+                        id: "wrapCode",
+                        command: "wrapCode",
+                        type: "button",
+                        title: "Wrap code",
+                        icon: '/packages/concrete_cms_docs/images/editor/code.png'
+                    });
+                    editor.attachStyleStateChange(codeStyle, function (a) {
+                        editor.getCommand("wrapCode").setState(a)
+                    });
+                },
+            });
+            CKEDITOR.config.extraPlugins = 'codeTag'
+        }
+    }())
+</script>
 
     <div class="page-header mb-3">
         <h1 class="page-title"><?php echo $pageTitle ?></h1>
