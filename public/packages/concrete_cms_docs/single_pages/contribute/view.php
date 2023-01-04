@@ -64,7 +64,7 @@ $userSelector = $app->make(UserSelector::class);
 
         <?php } ?>
 
-        <div class="float-right">
+        <div class="float-end">
             <button type="submit" class="btn btn-primary">
                 <?php echo $buttonTitle ?>
             </button>

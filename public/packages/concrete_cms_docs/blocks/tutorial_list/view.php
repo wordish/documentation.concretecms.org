@@ -47,7 +47,7 @@ $userInfoRepository = $app->make(UserInfoRepository::class);
         </div>
 
         <div class="col-md-6">
-            <div class="float-right">
+            <div class="float-end">
                 <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
                    aria-haspopup="true"
                    aria-expanded="false">
@@ -151,7 +151,7 @@ $userInfoRepository = $app->make(UserInfoRepository::class);
                             </td>
 
                             <td>
-                                <div class="float-right d-none d-sm-block">
+                                <div class="float-end d-none d-sm-block">
                                     <div class="timestamp">
                                         <?php echo $dateService->describeInterval(
                                             time() - $result->getCollectionDatePublicObject()->getTimestamp()
