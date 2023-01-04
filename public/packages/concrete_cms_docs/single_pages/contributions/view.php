@@ -27,7 +27,7 @@ $dateService = $app->make(Date::class);
 <?php if (count($results) > 0) { ?>
 
     <div class="page-header mb-5">
-        <div class="float-right">
+        <div class="float-end">
             <a href="<?php echo (string)Url::to('/contribute') ?>" class="btn btn-primary">
                 <?php echo t('Write Documentation') ?>
             </a>
@@ -97,7 +97,7 @@ $dateService = $app->make(Date::class);
                 </td>
 
                 <td>
-                    <div class="float-right">
+                    <div class="float-end">
                         <a class="btn btn-secondary btn-sm"
                            href="<?php echo (string)Url::to('/contribute', 'edit', $page->getCollectionID()) ?>">
                             <?php echo t("Edit"); ?>

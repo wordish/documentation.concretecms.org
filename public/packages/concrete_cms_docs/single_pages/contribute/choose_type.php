@@ -65,7 +65,7 @@ $form = $app->make(Form::class);
         </div>
     </div>
 
-    <div class="float-right">
+    <div class="float-end">
         <button type="submit" class="btn btn-primary">
             <?php echo t('Next') ?>
         </button>
