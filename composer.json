@@ -20,7 +20,7 @@
     "concrete5/core": "dev-develop",
     "concrete5/dependency-patches": "^1.4.0",
     "vlucas/phpdotenv": "^2.4",
-    "concretecms/concrete_cms_theme": "dev-bedrock-1.4",
+    "concretecms/concrete_cms_theme": "dev-master",
     "concrete5/phpass-compat": ">=1",
     "aembler/addon_markdown": "^1.0",
     "concrete5/community_badges_client": "dev-master",
