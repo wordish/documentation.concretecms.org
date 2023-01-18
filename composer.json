@@ -22,7 +22,6 @@
     "vlucas/phpdotenv": "^2.4",
     "concretecms/concrete_cms_theme": "dev-master",
     "concrete5/phpass-compat": ">=1",
-    "aembler/addon_markdown": "^1.0",
     "concrete5/community_badges_client": "dev-master",
     "doctrine/annotations": "^1.13",
     "laminas/laminas-http": "^2.15"
@@ -60,27 +59,9 @@
     "portlandlabs": {
       "type": "composer",
       "url": "https://composer.portlandlabs.com"
-    },
-    "addon_markdown": {
-      "type": "package",
-      "package": {
-        "name": "aembler/addon_markdown",
-        "version": "1.0.0",
-        "source": {
-          "url": "https://bitbucket.org/aembler/addon_markdown.git",
-          "type": "git",
-          "reference": "master"
-        }
-      }
     }
   },
   "scripts": {
-    "test": "phpunit",
-    "post-update-cmd": [
-      "ln -sf ../../vendor/aembler/addon_markdown/packages/markdown public/packages/markdown"
-    ],
-    "post-install-cmd": [
-      "ln -sf ../../vendor/aembler/addon_markdown/packages/markdown public/packages/markdown"
-    ]
+    "test": "phpunit"
   }
 }

@@ -7,7 +7,6 @@
 
 # Ignore composer packages
 /public/packages/concrete_cms_theme
-/public/packages/markdown
 /public/packages/community_badges_client
 
 # Ignore developer stuff
