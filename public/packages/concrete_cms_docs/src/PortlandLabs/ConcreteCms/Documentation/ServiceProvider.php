@@ -64,7 +64,7 @@ class ServiceProvider extends Provider
 
         $al->register(
             'javascript', 'concrete-cms-docs', 'js/concrete-cms-docs.js',
-            ['minify' => false, 'combine' => false], $pkg
+            ['minify' => false, 'combine' => false, 'version' => '1.4'], $pkg
         );
 
         $al->registerGroup('concrete-cms-docs', [

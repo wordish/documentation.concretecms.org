@@ -8,6 +8,7 @@
 require("./tutorial-search");
 require("./latest-video");
 require("./disclosure");
+require("./translate");
 
 import hljs from 'highlight.js';
 
