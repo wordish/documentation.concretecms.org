@@ -12,7 +12,7 @@ $content = $content ?? null;
 		<?php
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$data = $view->getRequestValue();
-			$content = $data['content'];
+			$content = $data['content'] ?? '';
 		}
 		$view->inc('form.php', array('composerContent' => $content, 'fieldName' => $view->field('content')));
 		?>
