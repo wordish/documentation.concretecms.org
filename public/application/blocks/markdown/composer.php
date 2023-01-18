@@ -1,5 +1,6 @@
 <?php
 defined('C5_EXECUTE') or die("Access Denied.");
+$content = $content ?? null;
 ?>
 
 <div class="form-group">
