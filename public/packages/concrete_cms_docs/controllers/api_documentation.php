@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
  *
  * Need the following set in `.env`:
  * URL_SITE_DOCUMENTATION_API="https://documentation.concretecms.org/api/"
- * PATH_SITE_DOCUMENTATION_API="../<documentation_api_path>/current/public"
+ * PATH_SITE_DOCUMENTATION_API="<documentation_api_project_path>/current/public"
  */
 
 class ApiDocumentation
@@ -32,7 +32,7 @@ class ApiDocumentation
 
         $latestVersion = '0.0.0'; // start at zero
 
-        foreach (new \DirectoryIterator('../' . getenv('PATH_SITE_DOCUMENTATION_API')) as $dir) {
+        foreach (new \DirectoryIterator(getenv('PATH_SITE_DOCUMENTATION_API')) as $dir) {
             if ($dir->isDot()) {
                 continue;               // ignore '..' and '.'
             }
