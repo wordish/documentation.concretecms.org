@@ -32,7 +32,7 @@ class ApiDocumentation
 
         $latestVersion = '0.0.0'; // start at zero
 
-        foreach (new \DirectoryIterator('../' . getenv('PATH_SITE_DOCUMENTATION_API')) as $dir) {
+        foreach (new \DirectoryIterator(getenv('PATH_SITE_DOCUMENTATION_API')) as $dir) {
             if ($dir->isDot()) {
                 continue;               // ignore '..' and '.'
             }
