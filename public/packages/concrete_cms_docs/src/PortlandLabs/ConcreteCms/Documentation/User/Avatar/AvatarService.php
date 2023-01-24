@@ -13,9 +13,7 @@ use Concrete\Core\Application\Application;
 use Concrete\Core\Cache\Level\ExpensiveCache;
 use Concrete\Core\User\Avatar\AvatarServiceInterface;
 use Concrete\Core\User\UserInfo;
-use Zend\Http\Client;
-use Zend\Http\Request;
-use Zend\Http\Response;
+use GuzzleHttp\Client;
 
 class AvatarService implements AvatarServiceInterface
 {
@@ -29,7 +27,7 @@ class AvatarService implements AvatarServiceInterface
 
     public function getAvatarPath($communityUserID)
     {
-        return sprintf('https://community.concretecms.org/files/avatars/%s.jpg', $communityUserID);
+        return sprintf('https://community.concretecms.org/application/files/avatars/%s.jpg', $communityUserID);
     }
 
     /**
@@ -49,19 +47,9 @@ class AvatarService implements AvatarServiceInterface
         if ($ui->getUserCommunityUserID()) {
             // I know this sucks. These type hints should be UserInfoInterface so that I can swap out UserInfo with our extended implementation. sadly
             // that's a bit more than what's on our plate right now, but maybe in v8
-            $request = new Request();
             $client = new Client();
-
-            $request->setMethod(Request::METHOD_HEAD);
-
-            $request->setUri($this->getAvatarPath($ui->getUserCommunityUserID()));
-
-            /**
-             * @var $response Response
-             */
             try {
-                $response = $client->dispatch($request);
-
+                $response = $client->head($this->getAvatarPath($ui->getUserCommunityUserID()));
                 if ($response->getStatusCode() == 200) {
                     $response = true;
                 } else {
@@ -88,9 +76,9 @@ class AvatarService implements AvatarServiceInterface
     public function getAvatar(UserInfo $ui)
     {
         if ($this->userHasAvatar($ui)) {
-            return $this->application->make('PortlandLabs\ConcreteCms\Documentation\User\Avatar\CommunityAvatar', array($ui));
+            return $this->application->make('PortlandLabs\ConcreteCms\Documentation\User\Avatar\CommunityAvatar', ['userInfo' => $ui]);
         } else {
-            return $this->application->make('Concrete\Core\User\Avatar\EmptyAvatar', array($ui));
+            return $this->application->make('Concrete\Core\User\Avatar\EmptyAvatar', ['userInfo' => $ui]);
         }
     }
 
