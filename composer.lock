@@ -382,12 +382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/concretecms-core.git",
-                "reference": "ab6c7483a9c7a7708f3c30854287320b6c6a5bf4"
+                "reference": "90d108275385b08ef9cea906a6957652fbdf8c54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/concretecms-core/zipball/ab6c7483a9c7a7708f3c30854287320b6c6a5bf4",
-                "reference": "ab6c7483a9c7a7708f3c30854287320b6c6a5bf4",
+                "url": "https://api.github.com/repos/concretecms/concretecms-core/zipball/90d108275385b08ef9cea906a6957652fbdf8c54",
+                "reference": "90d108275385b08ef9cea906a6957652fbdf8c54",
                 "shasum": ""
             },
             "require": {
@@ -530,7 +530,7 @@
                 "forum": "https://forums.concretecms.org/",
                 "source": "http://documentation.concretecms.org/api/"
             },
-            "time": "2023-01-25T16:34:24+00:00"
+            "time": "2023-01-25T20:38:20+00:00"
         },
         {
             "name": "concrete5/dependency-patches",
@@ -851,16 +851,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/concrete_cms_theme.git",
-                "reference": "8ec2c468d6b36e49265d507ebfc5329b4dc6e755"
+                "reference": "5b2ff53d4a5c4a0383c0176e0208cf225dd66973"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/concrete_cms_theme/zipball/8ec2c468d6b36e49265d507ebfc5329b4dc6e755",
-                "reference": "8ec2c468d6b36e49265d507ebfc5329b4dc6e755",
+                "url": "https://api.github.com/repos/concretecms/concrete_cms_theme/zipball/5b2ff53d4a5c4a0383c0176e0208cf225dd66973",
+                "reference": "5b2ff53d4a5c4a0383c0176e0208cf225dd66973",
                 "shasum": ""
+            },
+            "require": {
+                "spatie/schema-org": "^3"
             },
             "default-branch": true,
             "type": "concrete5-package",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -870,7 +878,7 @@
                 "issues": "https://github.com/concretecms/concrete_cms_theme/issues",
                 "source": "https://github.com/concretecms/concrete_cms_theme/tree/master"
             },
-            "time": "2023-01-19T18:36:58+00:00"
+            "time": "2023-01-25T21:20:51+00:00"
         },
         {
             "name": "dapphp/securimage",
@@ -7740,6 +7748,79 @@
                 "source": "https://github.com/scssphp/scssphp/tree/v1.11.0"
             },
             "time": "2022-09-02T21:24:55+00:00"
+        },
+        {
+            "name": "spatie/schema-org",
+            "version": "3.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/schema-org.git",
+                "reference": "54399c090aa14f875f0551be6ed688a2d7ea151e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/schema-org/zipball/54399c090aa14f875f0551be6ed688a2d7ea151e",
+                "reference": "54399c090aa14f875f0551be6ed688a2d7ea151e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.6",
+                "graham-campbell/analyzer": "^3.0.5",
+                "illuminate/collections": "^8.62.0",
+                "league/flysystem": "^2.3.0 || ^3.0",
+                "pestphp/pest": "^1.21",
+                "symfony/console": "^5.3.7 || 6.0",
+                "twig/twig": "^3.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\SchemaOrg\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Tom Witkowski",
+                    "email": "dev.gummibeer@gmail.com",
+                    "homepage": "https://gummibeer.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A fluent builder Schema.org types and ld+json generator",
+            "homepage": "https://github.com/spatie/schema-org",
+            "keywords": [
+                "schema-org",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/schema-org/issues",
+                "source": "https://github.com/spatie/schema-org/tree/3.13.0"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-11-14T16:02:16+00:00"
         },
         {
             "name": "ssddanbrown/htmldiff",
