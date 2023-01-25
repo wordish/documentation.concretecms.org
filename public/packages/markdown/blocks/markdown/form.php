@@ -2,7 +2,7 @@
 if (isset($composerContent)) {
     $content = $composerContent;
 } else {
-    $content = null;
+    $content = $content ?? null;
 }
 ?>
 
