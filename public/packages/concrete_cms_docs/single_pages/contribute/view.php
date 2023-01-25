@@ -77,7 +77,7 @@ $userSelector = $app->make(UserSelector::class);
     }())
 </script>
 
-    <div class="page-header mb-3">
+    <div class="page-header">
         <h1 class="page-title"><?php echo $pageTitle ?></h1>
     </div>
 

@@ -32,15 +32,50 @@ if (is_object($audienceObject)) {
         $audience[] = '<a href="' . (string)Url::to('/tutorials', 'search') . '?audience=' . strtolower($entry) . '">' . $entry . '</a>';
     }
 }
+
+$tutorialNotices = [];
+$isCoreTeam = false;
+$isOldTutorial = false;
+$coreEmails  = ['portlandlabs.com', 'concretecms.com', 'concrete5.org'];
+$now = new \DateTime();
+$then = $page->getCollectionDatePublicObject();
+$diff = $now->diff($then);
+if ($then->modify('+1 year') < $now) {
+    $isOldTutorial = true;
+}
+if ($userInfo instanceof UserInfo) {
+    foreach ($coreEmails as $coreEmail) {
+        if (strpos($userInfo->getUserEmail(), $coreEmail) > -1) {
+            $isCoreTeam = true;
+        }
+    }
+}
+if (!$isCoreTeam) {
+    $tutorialNotices[] = t('This is a community-contributed tutorial');
+}
+if ($isOldTutorial) {
+    $tutorialNotices[] = t('This tutorial is over a year old and may not apply to your version of Concrete CMS');
+}
+if (count($tutorialNotices)) {
+    $tutorialNotices[] = ' '; // This ensures we have a trailing period.
+
+}
 ?>
 <div class="ccm-docs-title">
     <h1>
         <?php echo h($title) ?>
     </h1>
 
+    <?php if (count($tutorialNotices)) { ?>
+
+        <div class="alert alert-warning"><?=implode('. ', $tutorialNotices)?></div>
+
+    <?php } ?>
+
     <div class="page-date">
         <?php echo $date; ?>
     </div>
+
 
     <?php if ($userInfo instanceof UserInfo) { ?>
         <div class="page-author">
