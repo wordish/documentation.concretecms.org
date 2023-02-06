@@ -371,6 +371,11 @@ class Contribute extends PageController
             $registeredUsersGroup = $groupRepository->getGroupByID(REGISTERED_GROUP_ID);
             $guestsGroup = $groupRepository->getGroupByID(GUEST_GROUP_ID);
 
+            // This is dumb but we need to refresh the draft object now that it's published
+            // because otherwise assignPermissions will pull from the drafts parent node instead of the new
+            // parent.
+            $d = Page::getByID($d->getCollectionID(), 'RECENT');
+
             if (is_object($registeredUsersGroup)) {
                 $d->assignPermissions($registeredUsersGroup, ["edit_in_documentation_composer"]);
             }

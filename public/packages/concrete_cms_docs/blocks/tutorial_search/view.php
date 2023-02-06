@@ -24,17 +24,37 @@ $app = Application::getFacadeApplication();
 /** @var Form $form */
 $form = $app->make(Form::class);
 $selection = $selection ?? null;
-$audience = $audience ?? null;
+$audience = $audience ?? 'all';
 $placeholder = $placeholder ?? null;
 ?>
 
-<form action="<?php echo $view->action('search') ?>" class="tutorial-search-form"
-      data-tutorial-search="<?php echo h($b->getBlockID()) ?>">
+<div data-vue-app="tutorial-search" v-cloak>
+    <tutorial-search
+            :query='<?=json_encode($selection)?>'
+            placeholder="<?=$placeholder?>"
+            action-url="<?php echo $view->action('search') ?>"
+            questions-data-source="<?=$view->action('load_questions')?>"
+            audience="<?=$audience?>"
+    >
+        <template v-slot:content>
+            <h1>
+                <?php echo t("Tutorials"); ?>
+            </h1>
 
-    <?php echo $form->hidden("audience", $audience); ?>
-    <?php echo $form->hidden("search", $selection?->id); ?>
-    <?php echo $form->select("searchField", [], [
-        "data-abs-ajax-url" => (string)$view->action('load_questions'),
-        "data-abs-locale-empty-title" => (string)(is_object($selection) ? $selection->text : $placeholder)
-    ]); ?>
-</form>
+            <p>
+                <?php echo t("Spend a few minutes learning some of the great tutorials created by our staff and the community."); ?>
+            </p>
+        </template>
+    </tutorial-search>
+</div>
+
+<script>
+    $(function () {
+        Concrete.Vue.activateContext('frontend', function (Vue, config) {
+            new Vue({
+                el: 'div[data-vue-app=tutorial-search]',
+                components: config.components
+            });
+        });
+    });
+</script>

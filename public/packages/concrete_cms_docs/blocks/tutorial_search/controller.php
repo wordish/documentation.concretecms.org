@@ -136,7 +136,7 @@ class Controller extends BlockController
             $ak = CollectionKey::getByHandle('questions_answered');
 
             /** @var SelectValueOption[] $questionAnsweredOptions */
-            $questionAnsweredOptions = $ak->getController()->getOptions('%' . $this->request->query->get("q") . '%');
+            $questionAnsweredOptions = $ak->getController()->getOptions('%' . $this->request->request->get("q") . '%');
 
             foreach ($questionAnsweredOptions as $option) {
                 $o = new stdClass;
@@ -151,7 +151,7 @@ class Controller extends BlockController
             $ak = CollectionKey::getByHandle('tags');
 
             /** @var SelectValueOption[] $tagOptions */
-            $tagOptions = $ak->getController()->getOptions('%' . $this->request->query->get("q") . '%');
+            $tagOptions = $ak->getController()->getOptions('%' . $this->request->request->get("q") . '%');
 
             foreach ($tagOptions as $option) {
                 $o = new stdClass;
@@ -162,6 +162,12 @@ class Controller extends BlockController
                 $options[] = $o;
             }
         }
+
+        $o = new stdClass;
+        $o->type = 'query';
+        $o->text = h($this->request->request->get("q"));
+        $o->id = $o->text;
+        $options[] = $o;
 
         return new JsonResponse($options);
     }

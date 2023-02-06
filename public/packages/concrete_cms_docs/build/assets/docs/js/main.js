@@ -1,11 +1,11 @@
-/**
- * @project:   ConcreteCMS Docs
- *
- * @copyright  (C) 2021 Portland Labs (https://www.portlandlabs.com)
- * @author     Fabian Bitter (fabian@bitter.de)
- */
+import TutorialSearch from './components/TutorialSearch'
 
-require("./tutorial-search");
+$(function() {
+    window.Concrete.Vue.createContext('frontend', {
+        TutorialSearch
+    }, 'frontend')
+})
+
 require("./latest-video");
 require("./disclosure");
 require("./translate");

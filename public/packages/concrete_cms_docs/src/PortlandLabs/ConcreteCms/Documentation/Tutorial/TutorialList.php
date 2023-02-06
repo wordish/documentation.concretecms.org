@@ -40,11 +40,11 @@ class TutorialList extends PageList
      */
     public function filterBySelectOption($join, $option)
     {
-        $this->query->leftJoin('cv', 'CollectionAttributeValues', $join,
+        $this->query->innerJoin('cv', 'CollectionAttributeValues', $join,
             'cv.cID = ' . $join . '.cID and cv.cvID = ' . $join . '.cvID');
-        $this->query->leftJoin($join, 'atSelectOptionsSelected', $join . 'Options', $join . '.avID = ' . $join . 'Options.avID');
-        $this->query->andWhere($join . 'Options.avSelectOptionID = :avSelectOptionID');
-        $this->query->setParameter('avSelectOptionID', $option->getSelectAttributeOptionID());
+        $this->query->innerJoin($join, 'atSelectOptionsSelected', $join . 'Options', $join . '.avID = ' . $join . 'Options.avID');
+        $this->query->andWhere($join . 'Options.avSelectOptionID = :avSelectOptionID_' . $join);
+        $this->query->setParameter('avSelectOptionID_' . $join, $option->getSelectAttributeOptionID());
     }
 
 }

@@ -39,4 +39,4 @@ mix.setPublicPath('../');
 
 mix
     .sass('assets/docs/scss/main.scss', '../css/concrete-cms-docs.css')
-    .js('assets/docs/js/main.js', '../js/concrete-cms-docs.js');
+    .js('assets/docs/js/main.js', '../js/concrete-cms-docs.js').vue()
