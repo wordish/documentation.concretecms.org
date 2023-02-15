@@ -15,7 +15,7 @@
     }
   },
   "require": {
-    "php": "8.2",
+    "php": "^8.2",
     "composer/installers": "^1.3",
     "concrete5/core": "dev-develop",
     "concrete5/dependency-patches": "^1.4.0",
