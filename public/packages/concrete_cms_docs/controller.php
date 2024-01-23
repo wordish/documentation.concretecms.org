@@ -33,7 +33,7 @@ class Controller extends Package implements ProviderAggregateInterface
 {
     protected $pkgHandle = 'concrete_cms_docs';
     protected $appVersionRequired = '9.0';
-    protected $pkgVersion = '1.1';
+    protected $pkgVersion = '1.2.2';
     protected $pkgAllowsFullContentSwap = true;
     protected $pkgAutoloaderRegistries = [
         'src/PortlandLabs/ConcreteCms/Documentation' => 'PortlandLabs\ConcreteCms\Documentation'
@@ -158,4 +158,11 @@ class Controller extends Package implements ProviderAggregateInterface
         } catch (Exception $e) {
         }
     }
+
+    public function upgrade()
+    {
+        parent::upgrade();
+        $this->installContentFile('update/data.xml');
+    }
+
 }
