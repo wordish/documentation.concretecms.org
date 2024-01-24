@@ -29,6 +29,7 @@ defined('C5_EXECUTE') or die('Access Denied.');
  */
 $navItems = $controller->getNavItems();
 $c = Page::getCurrentPage();
+$isLegacyDocsSidebar = !preg_match(':^/[0-9]+-x/:', $c->getCollectionPath());
 
 /**
  * The $navItems variable is an array of objects, each representing a nav menu item.
@@ -75,6 +76,7 @@ $c = Page::getCurrentPage();
  */
 
 /*** STEP 1 of 2: Determine all CSS classes (only 2 are enabled by default, but you can un-comment other ones or add your own) ***/
+
 foreach ($navItems as $ni) {
     $classes = array();
 
@@ -152,7 +154,33 @@ if (count($navItems) > 0) {
 
     echo '</ul>'; //closes the top-level menu
 } elseif (is_object($c) && $c->isEditMode()) {
-    ?>
+?>
     <div class="ccm-edit-mode-disabled-item"><?=t('Empty Auto-Nav Block.')?></div>
-    <?php
+<?php
+}
+
+if (!$isLegacyDocsSidebar) {
+?>
+    <script>
+     $(document).ready(function () {
+         var  menu = function () {
+             $('.col-sidebar ul.nav > li > ul').hide();
+             $('.col-sidebar ul.nav > li.nav-path-selected > ul').show();
+         };
+         menu();
+         $('.col-sidebar ul.nav > li').on(
+             'click',
+             function (e) {
+                 e.preventDefault();
+                 el = e.currentTarget;
+                 if ($(el).hasClass('nav-selected')) {
+                     return;
+                 }
+                 $('.col-sidebar ul.nav > li.nav-path-selected').toggleClass('nav-path-selected');
+                 $(el).toggleClass(['nav-path-selected']);
+                 return menu();
+         });
+     });
+    </script>
+<?php
 }
