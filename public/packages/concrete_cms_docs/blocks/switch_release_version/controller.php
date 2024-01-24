@@ -14,12 +14,11 @@ class Controller extends BlockController implements UsesFeatureInterface
     protected $btInterfaceWidth = 500;
     protected $btInterfaceHeight = 340;
     protected $btTable = 'btSwitchReleaseVersion';
-    // protected $btIgnorePageThemeGridFrameworkContainer = true;
     protected $mapping = [
         '9.x' => 'grc_TR',
         '8.x' => 'en_US'
     ];
-    protected $currentRelease = '9.x'; // = array_keys($mapping)[0];
+    protected $currentRelease = '9.x';
 
     public function getBlockTypeName()
     {
