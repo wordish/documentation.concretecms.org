@@ -686,7 +686,7 @@
             </area>
         </page>
         <page name="Guided Tour" path="/user-guide/guided-tour" filename="" pagetype="editor_document"
-              template="right_sidebar"
+              template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -797,7 +797,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="What is concreteCMS?" path="/user-guide/guided-tour/what-is-concrete-cms" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -907,7 +907,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Logging In" path="/user-guide/guided-tour/logging-in" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -1018,7 +1018,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
         </page>
         <page name="Pages, Areas, Blocks, Themes and Stacks"
               path="/user-guide/guided-tour/pages-areas-blocks-themes-and-stacks" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -1128,7 +1128,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Page Types, Templates and Themes" path="/user-guide/guided-tour/pages-types-templates-and-themes"
-              filename="" pagetype="editor_document" template="right_sidebar" user="admin"
+              filename="" pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -1238,7 +1238,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Dashboard" path="/user-guide/guided-tour/dashboard" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -1348,7 +1348,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="File Manager" path="/user-guide/guided-tour/file-manager" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -1458,7 +1458,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Users &amp; Groups" path="/user-guide/guided-tour/users-and-groups" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -1568,7 +1568,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Permissions &amp; Workflow" path="/user-guide/guided-tour/permissions-and-workflow" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -1678,7 +1678,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Attributes" path="/user-guide/guided-tour/attributes" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -1788,7 +1788,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Conversations" path="/user-guide/guided-tour/conversations" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -1898,7 +1898,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Jobs" path="/user-guide/guided-tour/jobs" filename="" pagetype="editor_document"
-              template="right_sidebar"
+              template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -2009,7 +2009,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Packages" path="/user-guide/guided-tour/packages" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -2119,7 +2119,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Multilingual" path="/user-guide/guided-tour/multilingual" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -2229,7 +2229,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Editing with Concrete" path="/user-guide/editing-with-concrete" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -2339,7 +2339,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Edit Mode" path="/user-guide/editing-with-concrete/edit-mode" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -2449,7 +2449,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Adding Pages" path="/user-guide/editing-with-concrete/adding-pages" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -2559,7 +2559,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Version Control" path="/user-guide/editing-with-concrete/version-control" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -2669,7 +2669,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="File Management" path="/user-guide/editing-with-concrete/file-management" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -2779,7 +2779,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Page Properties and Deletion" path="/user-guide/editing-with-concrete/page-properties-and-deletion"
-              filename="" pagetype="editor_document" template="right_sidebar" user="admin"
+              filename="" pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -2890,7 +2890,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
         </page>
         <page name="Changing Page Types &amp; Templates"
               path="/user-guide/editing-with-concrete/chaning-page-types-and-templates" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3000,7 +3000,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Running a Site" path="/user-guide/running-a-site" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3110,7 +3110,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Sitemap Management" path="/user-guide/running-a-site/sitemap-management" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3220,7 +3220,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Conversations Management" path="/user-guide/running-a-site/conversations-management" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3330,7 +3330,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Form Results" path="/user-guide/running-a-site/form-results" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3440,7 +3440,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="User Management" path="/user-guide/running-a-site/user-management" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3550,7 +3550,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="File Management" path="/user-guide/running-a-site/file-management" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3660,7 +3660,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Queues, Jobs &amp; Tasks" path="/user-guide/running-a-site/queues-jobs-and-tasks" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3770,7 +3770,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Caching &amp; Optimization" path="/user-guide/running-a-site/caching-and-optimization" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3880,7 +3880,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Adding Add-Ons &amp; Themes" path="/user-guide/running-a-site/adding-add-ons-and-themes" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -3990,7 +3990,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="SEO" path="/user-guide/running-a-site/seo" filename="" pagetype="editor_document"
-              template="right_sidebar"
+              template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -4101,7 +4101,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Logging" path="/user-guide/running-a-site/logging" filename="" pagetype="editor_document"
-              template="right_sidebar" user="admin"
+              template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -4211,7 +4211,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Removing Unused Functionality" path="/user-guide/running-a-site/removing-unused-functionality"
-              filename="" pagetype="editor_document" template="right_sidebar" user="admin"
+              filename="" pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -4321,7 +4321,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Keeping Sites Fast" path="/user-guide/running-a-site/keeping-sites-fast" filename=""
-              pagetype="editor_document" template="right_sidebar" user="admin"
+              pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -4431,7 +4431,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Ensuring Email Deliverability" path="/user-guide/running-a-site/ensuring-email-deliverability"
-              filename="" pagetype="editor_document" template="right_sidebar" user="admin"
+              filename="" pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -4541,7 +4541,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Troubleshooting Environment" path="/user-guide/running-a-site/troubleshooting-environment"
-              filename="" pagetype="editor_document" template="right_sidebar" user="admin"
+              filename="" pagetype="editor_document" template="document" user="admin"
               description="" package="">
             <area name="Page Header">
                 <blocks>
@@ -4650,7 +4650,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
                 </blocks>
             </area>
         </page>
-        <page name="Developers" path="/developers" filename="" pagetype="developer_document" template="right_sidebar"
+        <page name="Developers" path="/developers" filename="" pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <attributes>
@@ -4663,7 +4663,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Introduction &amp; Installation" path="/developers/introduction-and-installation" filename=""
-              pagetype="developer_document" template="right_sidebar"
+              pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -4774,7 +4774,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="System Requirements" path="/developers/introduction-and-installation/system-requirements"
-              filename="" pagetype="developer_document" template="right_sidebar"
+              filename="" pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -4885,7 +4885,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Supported Browsers" path="/developers/introduction-and-installation/supported-browsers" filename=""
-              pagetype="developer_document" template="right_sidebar"
+              pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -4996,7 +4996,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Installing Concrete" path="/developers/introduction-and-installation/installing-concrete"
-              filename="" pagetype="developer_document" template="right_sidebar"
+              filename="" pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -5108,7 +5108,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
         </page>
         <page name="Hosting on Specific Web Hosts"
               path="/developers/introduction-and-installation/installing-concrete/hosting-on-specific-web-hosts"
-              filename="" pagetype="developer_document" template="right_sidebar"
+              filename="" pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -5219,7 +5219,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Moving a Site" path="/developers/introduction-and-installation/installing-concrete/moving-a-site"
-              filename="" pagetype="developer_document" template="right_sidebar"
+              filename="" pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -5331,7 +5331,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
         </page>
         <page name="Upgrading Concrete"
               path="/developers/introduction-and-installation/installing-concrete/upgrade-concrete-cms" filename=""
-              pagetype="developer_document" template="right_sidebar"
+              pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -5442,7 +5442,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Version History" path="/developers/introduction-and-installation/version-history" filename=""
-              pagetype="developer_document" template="right_sidebar"
+              pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -5553,7 +5553,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Versioning Numbering Guide" path="/developers/introduction-and-installation/version-numbering-guide"
-              filename="" pagetype="developer_document" template="right_sidebar"
+              filename="" pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -5664,7 +5664,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Glossary of Terms" path="/developers/introduction-and-installation/glossary-of-terms" filename=""
-              pagetype="developer_document" template="right_sidebar"
+              pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -5775,7 +5775,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Basic Concepts" path="/developers/basic-concepts" filename="" pagetype="developer_document"
-              template="right_sidebar"
+              template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -5886,7 +5886,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Pages &amp; Themes" path="/developers/pages-and-themes" filename="" pagetype="developer_document"
-              template="right_sidebar"
+              template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -5997,7 +5997,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Working with Blocks" path="/developers/working-with-blocks" filename=""
-              pagetype="developer_document" template="right_sidebar"
+              pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -6108,7 +6108,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Express" path="/developers/express" filename="" pagetype="developer_document"
-              template="right_sidebar"
+              template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -6219,7 +6219,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="JavaScript and CSS Asset System" path="/developers/javascript-and-css-asset-system" filename=""
-              pagetype="developer_document" template="right_sidebar"
+              pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -6331,7 +6331,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
         </page>
         <page name="Bundling Code into Packages for Reuse and Marketplace Distribution"
               path="/developers/bundling-code-into-packages" filename="" pagetype="developer_document"
-              template="right_sidebar"
+              template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -6442,7 +6442,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
             </area>
         </page>
         <page name="Working with Files and the File Manager" path="/developers/working-with-files" filename=""
-              pagetype="developer_document" template="right_sidebar"
+              pagetype="developer_document" template="document"
               user="admin"
               description="" package="">
             <area name="Page Header">
@@ -7749,7 +7749,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
         <pagetype name="Developer Document" handle="developer_document" package="" launch-in-composer="1"
                   is-frequently-added="1">
             <pagetemplates type="custom" default="right_sidebar">
-                <pagetemplate handle="right_sidebar"/>
+                <pagetemplate handle="document"/>
             </pagetemplates>
             <target handle="page_type" package="" path="/developers" pagetype="developer_document"
                     form-factor="sitemap_in_page"/>
@@ -7771,7 +7771,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
                     </set>
                 </formlayout>
                 <output>
-                    <pagetemplate handle="right_sidebar">
+                    <pagetemplate handle="document">
                         <page name="" path="" filename="" pagetype="developer_document" template="document" user="admin"
                               description="" package="">
                             <area name="Page Header">
@@ -7888,8 +7888,8 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
         </pagetype>
         <pagetype name="Editor Document" handle="editor_document" package="" launch-in-composer="1"
                   is-frequently-added="1">
-            <pagetemplates type="custom" default="right_sidebar">
-                <pagetemplate handle="right_sidebar"/>
+            <pagetemplates type="custom" default="document">
+                <pagetemplate handle="document"/>
             </pagetemplates>
             <target handle="page_type" package="" path="/user-guide" pagetype="editor_document"
                     form-factor="sitemap_in_page"/>
@@ -7909,7 +7909,7 @@ Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming 
                     </set>
                 </formlayout>
                 <output>
-                    <pagetemplate handle="right_sidebar">
+                    <pagetemplate handle="document">
                         <page name="" path="" filename="" pagetype="editor_document" template="editor_document"
                               user="admin" description="" package="">
                             <area name="Page Header">
