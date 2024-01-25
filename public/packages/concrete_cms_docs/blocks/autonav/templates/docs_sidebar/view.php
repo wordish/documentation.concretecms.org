@@ -171,6 +171,9 @@ if (!$isLegacyDocsSidebar) {
          $('.col-sidebar ul.nav > li').on(
              'click',
              function (e) {
+                 if (e.currentTarget !== e.target.parentElement) {
+                     return true;
+                 }
                  e.preventDefault();
                  el = e.currentTarget;
                  if ($(el).hasClass('nav-selected')) {
