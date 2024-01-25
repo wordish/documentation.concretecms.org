@@ -37,11 +37,6 @@ class Controller extends BlockController implements UsesFeatureInterface
         ];
     }
 
-    public function add()
-    {
-        $this->edit();
-    }
-
     public function view ()
     {
         $c = Page::getCurrentPage();
