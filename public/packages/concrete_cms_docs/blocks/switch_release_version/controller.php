@@ -63,6 +63,7 @@ class Controller extends BlockController implements UsesFeatureInterface
         $this->set('releaseSelections', $releasesAccessible);
         $this->set('cID', $c->getCollectionID());
         $this->set('detector', $detector);
+        $this->set('currentRelease', $this->currentRelease);
     }
     
     public function action_switch_release_version ($currentPageID, $targetReleaseVersion) {
