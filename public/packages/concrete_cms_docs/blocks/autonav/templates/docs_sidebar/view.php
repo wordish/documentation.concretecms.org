@@ -163,6 +163,7 @@ if (!$isLegacyDocsSidebar) {
 ?>
     <script>
      $(document).ready(function () {
+         $('.col-sidebar ul.nav > li > ul ul').hide();
          var  menu = function () {
              $('.col-sidebar ul.nav > li > ul').hide();
              $('.col-sidebar ul.nav > li.nav-path-selected > ul').show();
@@ -176,11 +177,12 @@ if (!$isLegacyDocsSidebar) {
                  }
                  e.preventDefault();
                  el = e.currentTarget;
-                 if ($(el).hasClass('nav-selected')) {
+                 if ($(el).hasClass('nav-selected nav-path-selected')) {
+                     $(el).find('ul').toggle();
                      return;
                  }
-                 $('.col-sidebar ul.nav > li.nav-path-selected').toggleClass('nav-path-selected');
-                 $(el).toggleClass(['nav-path-selected']);
+                 $('.col-sidebar ul.nav > li.nav-path-selected').toggleClass('nav-selected nav-path-selected');
+                 $(el).toggleClass(['nav-selected nav-path-selected']);
                  return menu();
          });
      });
