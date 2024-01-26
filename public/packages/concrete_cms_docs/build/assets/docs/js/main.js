@@ -9,6 +9,7 @@ $(function() {
 require("./latest-video");
 require("./disclosure");
 require("./translate");
+require("./switch-release-version");
 
 import hljs from 'highlight.js';
 
