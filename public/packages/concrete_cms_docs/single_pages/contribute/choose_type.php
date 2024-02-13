@@ -43,28 +43,6 @@ $form = $app->make(Form::class);
         </div>
     </div>
 
-    <div class="form-group">
-        <div class="form-check">
-            <?php echo $form->radio('documentation_type', 'editor_documentation', false, ["class" => "form-check-input", "id" => 'documentation_type_editor_documentation']); ?>
-            <?php echo $form->label('documentation_type_editor_documentation', t("Editor Documentation"), ["class" => "form-check-label"]); ?>
-
-            <p class="text-muted">
-                <?php echo t('Editor documentation describes how to use a particular feature of the Concrete user interface. Good editor documentation should be targeted at someone using Concrete to edit a website.') ?>
-            </p>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="form-check">
-            <?php echo $form->radio('documentation_type', 'developer_documentation', false, ["class" => "form-check-input", "id" => 'documentation_type_developer_documentation']); ?>
-            <?php echo $form->label('documentation_type_developer_documentation', t("Developer Documentation"), ["class" => "form-check-label"]); ?>
-
-            <p class="text-muted">
-                <?php echo t('Developer documentation pages should be broader than tutorials, and appear at the proper point in the table of contents. They should target someone configuring, extending or customizing Concrete.') ?>
-            </p>
-        </div>
-    </div>
-
     <div class="float-end">
         <button type="submit" class="btn btn-primary">
             <?php echo t('Next') ?>
