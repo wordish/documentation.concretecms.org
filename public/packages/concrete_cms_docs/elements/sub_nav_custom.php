@@ -36,14 +36,14 @@ $urlManager = $app->make(UrlManager::class);
 
                 <nav>
                     <ul>
-                        <li class="<?php echo strpos($c->getCollectionPath(), "/user-guide") !== false ? "active" : "";?>">
-                            <a href="<?php echo (string)Url::to("/user-guide");?>">
+                        <li class="<?php echo strpos($c->getCollectionPath(), "/9-x/user-guide") !== false ? "active" : "";?>">
+                            <a href="<?php echo (string)Url::to("/9-x/user-guide");?>">
                                 <?php echo t("User Guide"); ?>
                             </a>
                         </li>
 
-                        <li class="<?php echo strpos($c->getCollectionPath(), "/developers") !== false ? "active" : "";?>">
-                            <a href="<?php echo (string)Url::to("/developers");?>">
+                        <li class="<?php echo strpos($c->getCollectionPath(), "/9-x/developers") !== false ? "active" : "";?>">
+                            <a href="<?php echo (string)Url::to("/9-x/developers");?>">
                                 <?php echo t("Developers"); ?>
                             </a>
                         </li>
